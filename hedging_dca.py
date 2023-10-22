@@ -1,8 +1,12 @@
 import MetaTrader5 as mt5
 import pandas as pd
 import time
+import logging
 
-class HedgedDCA:
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+
+class HedgingDCA:
     def __init__(self, symbol, volume, profit_target, no_of_safty_orders, direction, max_loss_pct):
         self.symbol = symbol
         self.volume = volume
@@ -66,23 +70,15 @@ class HedgedDCA:
         except KeyError:
             print("Error: 'profit' column not found in the DataFrame.")
             return 0.0
-    
+        
     def cal_margin(self, df, symbol, order_type):
-        print(df)  # Debug print    
+            df_filtered = df[df["type"] == order_type]
 
-        if "type" not in df.columns:
-            print("The 'type' column is missing in the DataFrame.")
-            return 0  # or handle this scenario in a way you see fit
-        df = df[df["type"] == order_type]
+            def calc_row_margin(row):
+                return mt5.order_calc_margin(order_type, symbol, row['volume'], row['price_open'])
 
-        sum = 0
-        for _, row in df.iterrows():
-            margin = mt5.order_calc_margin(order_type, symbol, row['volume'], row['price_open'])
-            if margin is None:
-                print(f"Failed to calculate margin for {symbol}")
-                continue
-            sum += margin
-        return sum
+            margins = df_filtered.apply(calc_row_margin, axis=1)
+            return margins.sum()
     
     def cal_pct_profit(self, symbol):
         df = self._get_positions_df(symbol)
@@ -143,51 +139,49 @@ class HedgedDCA:
             print("Maximum loss threshold reached. Stopping the bot.")
             self.close_all(self.symbol)
             exit()  # Stop the bot
-  
+
+    def has_open_orders(self, order_type):
+        df = self._get_positions_df(self.symbol)
+        return not df[df["type"] == order_type].empty
+    
+    def next_fibonacci(self):
+        next_value = self.fibonacci_sequence[-1] + self.fibonacci_sequence[-2]
+        self.fibonacci_sequence.append(next_value)
+        return next_value
+
+
     def run(self):
-        fibonacci_sequence = [1, 1]  # Starting with the basic sequence
-        
+        self.fibonacci_sequence = [1, 1]
+
+        # Entry
+        self.market_order(self.symbol, self.volume, "buy")
+        self.market_order(self.symbol, self.volume, "sell")
+
+        dca_count = 0
+        current_fib_volume = self.volume * self.next_fibonacci()
         while True:
-            # Check if platform is connected
-            if not mt5.terminal_info().connected:
-                print("Platform disconnected. Stopping the bot.")
-                exit()
+            positions_df = self._get_positions_df(self.symbol)
 
-            # Check maximum loss
+            current_buy_profit = self.cal_profit(positions_df, "buy")
+            current_sell_profit = self.cal_profit(positions_df, "sell")
+
+            # Profit Taking
+            if current_buy_profit >= self.profit_target or current_sell_profit >= self.profit_target:
+                self.close_all(self.symbol)
+                break
+
+            # DCA Logic if there are no other open orders of the same type
+            if not self.has_open_orders("buy") and dca_count < self.no_of_safty_orders:
+                self.market_order(self.symbol, current_fib_volume, "buy")
+                dca_count += 1
+                current_fib_volume = self.volume * self.next_fibonacci()
+
+
+            if not self.has_open_orders("sell") and dca_count < self.no_of_safty_orders:
+                self.market_order(self.symbol, current_fib_volume, "sell")
+                dca_count += 1
+                current_fib_volume = self.volume * self.next_fibonacci()
+
+
             self.check_max_loss()
-
-            # Place both buy and sell orders
-            self.market_order(self.symbol, self.volume, "buy")
-            self.market_order(self.symbol, self.volume, "sell")
-
-            curr_no_of_safty_orders = 0
-            multiplied_volume = self.volume * fibonacci_sequence[-1]  # Using the latest Fibonacci number
-            deviation = -1
-            next_price_level = -1
-
-            while curr_no_of_safty_orders < self.no_of_safty_orders:
-                # Check for pending orders that are too old and might be stuck
-                orders = mt5.orders_get(symbol=self.symbol)
-                if orders:
-                    for order in orders:
-                        # Check if an order is older than 10 minutes and cancel it
-                        if order.time_setup < (time.time() - 600):  # 600 seconds = 10 minutes
-                            print(f"Cancelling old order {order.ticket} for symbol {self.symbol}")
-                            mt5.order_check(order)
-
-                curr_price_deviation = self.cal_curr_price_deviation(self.symbol)
-                if curr_price_deviation <= next_price_level:
-                    self.market_order(self.symbol, multiplied_volume, "buy")
-                    self.market_order(self.symbol, multiplied_volume, "sell")
-
-                    fibonacci_sequence.append(fibonacci_sequence[-1] + fibonacci_sequence[-2])
-                    multiplied_volume = self.volume * fibonacci_sequence[-1]
-                    
-                    deviation *= 2
-                    next_price_level += deviation
-                    curr_no_of_safty_orders += 1
-
-                pct_profit = self.cal_pct_profit(self.symbol)
-                if pct_profit >= self.profit_target:
-                    self.close_all(self.symbol)
-                    break
+            time.sleep(20)
