@@ -3,9 +3,9 @@ from hedging_dca import HedgingDCA
 from threading import Thread
 
 # Initialize the bots using HedgeDCA class
-bot1 = HedgingDCA(symbol="BTCUSD", volume=0.01, profit_target=2, no_of_safty_orders=4, direction="buy", max_loss_pct=5)
-bot2 = HedgingDCA(symbol="BNBUSD", volume=0.01, profit_target=2, no_of_safty_orders=4, direction="buy", max_loss_pct=5)
-bot3 = HedgingDCA(symbol="ETHUSD", volume=0.01, profit_target=2, no_of_safty_orders=4, direction="buy", max_loss_pct=5)
+bot1 = HedgingDCA(symbol="EURUSD", volume=0.01,max_loss_pct =30)
+bot2 = HedgingDCA(symbol="GBPUSD", volume=0.01,max_loss_pct =30)
+bot3 = HedgingDCA(symbol="EURNZD", volume=0.01,max_loss_pct =30)
 
 # bot1 = HedgedDCA(symbol="BTCUSD", volume=0.01, profit_target=2, no_of_safty_orders=4, direction="buy")
 # bot2 = HedgedDCA(symbol="BNBUSD", volume=0.01, profit_target=2, no_of_safty_orders=4, direction="buy")
@@ -27,7 +27,7 @@ thread2 = Thread(target=b2)
 thread3 = Thread(target=b3)
 
 # Initialize MT5
-mt5.initialize(login=51439413, server="ICMarketsSC-Demo", password="9JjRQcsn")
+mt5.initialize(login=51446835, server="ICMarketsSC-Demo", password="qwfgKZdZ")
 
 # Start the bot threads
 thread1.start()

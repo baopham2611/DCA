@@ -1,5 +1,6 @@
 import MetaTrader5 as mt5
 import pandas as pd
+import time
 
 class Bot:
     def __init__(self, symbol, volume, profit_target, no_of_safty_orders, direction):
@@ -144,4 +145,4 @@ class Bot:
                 if pct_profit >= self.profit_target:
                     self.close_all(self.symbol)
                     break
-                
+                time.sleep(30)

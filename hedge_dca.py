@@ -1,6 +1,7 @@
 import MetaTrader5 as mt5
 import pandas as pd
 import time
+import datetime
 
 class HedgedDCA:
     def __init__(self, symbol, volume, profit_target, no_of_safty_orders, direction, max_loss_pct):
@@ -68,7 +69,7 @@ class HedgedDCA:
             return 0.0
     
     def cal_margin(self, df, symbol, order_type):
-        print(df)  # Debug print    
+        # print(df)  # Debug print    
 
         if "type" not in df.columns:
             print("The 'type' column is missing in the DataFrame.")
@@ -191,3 +192,7 @@ class HedgedDCA:
                 if pct_profit >= self.profit_target:
                     self.close_all(self.symbol)
                     break
+            print(f"Check trading point at: {datetime.datetime.now()}")
+            self.check_max_loss()
+            time.sleep(20)
+
