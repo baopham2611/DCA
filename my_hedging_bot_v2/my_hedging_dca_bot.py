@@ -1,6 +1,5 @@
 import pandas as pd 
-import time 
-import datetime 
+import time  
 import MetaTrader5 as mt5
 import  logging
 import os
@@ -108,6 +107,17 @@ class MyHedgingDCABot:
         elif type == "sell":
               last_order_price = float(trade_history_df["sell_at"].iloc[-1])
               order_type = mt5.ORDER_TYPE_BUY
+
+        self.logger.info(
+            f"""{mt5.TRADE_ACTION_DEAL}
+                {int(ticket)}
+                {symbol}
+                {volume}
+                {order_type}
+                {last_order_price}
+                {mt5.ORDER_TIME_GTC}
+                {mt5.ORDER_FILLING_IOC}
+              """)
               
 
         request = {
@@ -123,6 +133,8 @@ class MyHedgingDCABot:
             "type_time": mt5.ORDER_TIME_GTC,
             "type_filling": mt5.ORDER_FILLING_IOC,
         }
+
+        print(request)
 
         
         result = mt5.order_send(request)
@@ -192,9 +204,7 @@ class MyHedgingDCABot:
 
         make_buy_order = self.make_order(symbol,volume,"buy")
         make_sell_order = self.make_order(symbol,volume,"sell")
-
-        next_buy_volume = volume * float(make_buy_order.price)
-        next_sell_volume = volume * float(make_sell_order.price)
+        
         
         # Create a new row with the values you want to append
         first_trade_row = {
@@ -217,8 +227,8 @@ class MyHedgingDCABot:
             "fib_number": first_fib_number,
             "next_fib_number": next_fib_number,
             "next_volume": next_fib_number * volume,
-            "next_buy_at": make_buy_order.price + next_buy_volume,
-            "next_sell_at": make_sell_order.price - next_sell_volume,
+            "next_buy_at": make_buy_order.price + 0.004,
+            "next_sell_at": make_sell_order.price - 0.004,
             "market_direction": None,
             "close_all_order_type": None,
             "max_buy_direction_price": make_buy_order.price,
@@ -262,8 +272,8 @@ class MyHedgingDCABot:
         current_market_price = self.get_current_market_price(symbol)
 
 
-        make_buy_order = self.make_order(symbol,buy_volume,"sell")
-        make_sell_order = self.make_order(symbol,sell_volume,"buy")
+        make_buy_order = self.make_order(symbol,buy_volume,"buy")
+        make_sell_order = self.make_order(symbol,sell_volume,"sell")
 
         
 
@@ -297,8 +307,8 @@ class MyHedgingDCABot:
             "fib_number": int(fib_number),
             "next_fib_number": next_fib_number,
             "next_volume": next_volume,
-            "next_buy_at": make_buy_order.price + next_volume,
-            "next_sell_at": make_sell_order.price - next_volume,
+            "next_buy_at": make_buy_order.price + 0.004,
+            "next_sell_at": make_sell_order.price - 0.004,
             "market_direction": market_direction,
             "close_all_order_type": close_all_order_type,
             "max_buy_direction_price": make_buy_order.price,
@@ -379,6 +389,7 @@ class MyHedgingDCABot:
         elif is_has_open_orders == True:
             self.logger.info(f"Already has opened order")
 
+
         while True:
             trade_history_df = pd.read_csv(f"{symbol}_trade_history_df.csv")
             current_market_price = float(self.get_current_market_price(symbol))
@@ -393,65 +404,89 @@ class MyHedgingDCABot:
             
             # DCA for Buy direction
             if current_market_price >= next_buy_at: 
-                self.logger.info("current_market_price >= next_buy_at")
-                buy_ticket = trade_history_df["buy_ticket"].iloc[-1]
-                buy_volume = trade_history_df["buy_volume"].iloc[-1]
-                self.close_last_order(symbol,"buy",buy_ticket,buy_volume)
-                self.logger.info(f"Close last buy order: COMPLETED")
-                self.make_next_buy_sell_order(symbol,volume,"buy")
-                self.logger.info(f"Make next buy and sell orders: COMPLETED")
+                if trade_history_df["is_first_order_of_sequence"] == "True": 
+                    self.logger.info("current_market_price >= next_buy_at")
+                    buy_ticket = trade_history_df["buy_ticket"].iloc[-1]
+                    buy_volume = trade_history_df["buy_volume"].iloc[-1]
+                    self.close_last_order(symbol,"buy",buy_ticket,buy_volume)
+                    self.logger.info(f"Close last buy order: COMPLETED")
+                    self.make_next_buy_sell_order(symbol,volume,"buy")
+                    self.logger.info(f"Make next buy and sell orders: COMPLETED")
+                elif trade_history_df["is_first_order_of_sequence"] == "False" and trade_current_direction == "buy":
+                    self.logger.info("current_market_price >= next_buy_at")
+                    buy_ticket = trade_history_df["buy_ticket"].iloc[-1]
+                    buy_volume = trade_history_df["buy_volume"].iloc[-1]
+                    self.close_last_order(symbol,"buy",buy_ticket,buy_volume)
+                    self.logger.info(f"Close last buy order: COMPLETED")
+                    self.make_next_buy_sell_order(symbol,volume,"buy")
+                    self.logger.info(f"Make next buy and sell orders: COMPLETED")
+                else: 
+                    continue
             
             # DCA for Sell direction
             elif current_market_price <= next_sell_at: 
-                self.logger.info("current_market_price <= next_sell_at")
-                sell_ticket = trade_history_df["sell_ticket"].iloc[-1]
-                sell_volume = trade_history_df["sell_volume"].iloc[-1]
-                self.close_last_order(symbol,"sell",sell_ticket,sell_volume)
-                self.logger.info(f"Close last sell order: COMPLETED")
-                self.make_next_buy_sell_order(symbol,volume,"sell")
-                self.logger.info(f"Make next buy and sell orders: COMPLETED")
+                if trade_history_df["is_first_order_of_sequence"] == "True":
+                    self.logger.info("current_market_price <= next_sell_at")
+                    sell_ticket = trade_history_df["sell_ticket"].iloc[-1]
+                    sell_volume = trade_history_df["sell_volume"].iloc[-1]
+                    self.close_last_order(symbol,"sell",sell_ticket,sell_volume)
+                    self.logger.info(f"Close last sell order: COMPLETED")
+                    self.make_next_buy_sell_order(symbol,volume,"sell")
+                    self.logger.info(f"Make next buy and sell orders: COMPLETED")
+                elif trade_history_df["is_first_order_of_sequence"] == "False" and trade_current_direction == "sell":
+                    self.logger.info("current_market_price <= next_sell_at")
+                    sell_ticket = trade_history_df["sell_ticket"].iloc[-1]
+                    sell_volume = trade_history_df["sell_volume"].iloc[-1]
+                    self.close_last_order(symbol,"sell",sell_ticket,sell_volume)
+                    self.logger.info(f"Close last sell order: COMPLETED")
+                    self.make_next_buy_sell_order(symbol,volume,"sell")
+                    self.logger.info(f"Make next buy and sell orders: COMPLETED")
+                else: 
+                    continue
 
-            elif trade_current_direction == "buy" and current_market_price < close_all_when_market_reverse_price_at:
+            # Close Bot when price reverse more than 27%
+            elif trade_current_direction == "buy" and current_market_price <= close_all_when_market_reverse_price_at:
                 self.logger.info(f"Market reverse 30% from buy direction to sell")
                 self.close_all_when_market_reverse_price_at_30pct(symbol)
                 self.logger.info(f"Close all of the orders: SUCCESSFULLY")
                 self.logger.info(f"Bot existing ...")
                 exit()
-            elif trade_current_direction == "sell" and current_market_price > close_all_when_market_reverse_price_at:
+
+            # Close Bot when price reverse more than 27%
+            elif trade_current_direction == "sell" and current_market_price >= close_all_when_market_reverse_price_at:
                 self.logger.info(f"Market reverse 30% from sell direction to buy") 
                 self.close_all_when_market_reverse_price_at_30pct(symbol)
                 self.logger.info(f"Close all of the orders: SUCCESSFULLY")
                 self.logger.info(f"Bot existing ...")
                 exit()
-
-            
+                
+                
             # Keep holding when not hit the next buy or next sell price
             elif current_market_price >= next_sell_at and current_market_price <= next_buy_at:
                 self.logger.info(f"trade_current_direction: {trade_current_direction}")
                 self.logger.info(f"max_buy_direction_price: {max_buy_direction_price}")
                 self.logger.info(f"max_sell_direction_price: {max_sell_direction_price}")
-                if trade_current_direction == "buy" and current_market_price > max_buy_direction_price:
+                
+                if trade_current_direction == "buy" and (current_market_price >= max_buy_direction_price):
                     self.logger.info(f"Current market buy price: {current_market_price} > max buy price {max_buy_direction_price}")
                     max_buy_price = current_market_price
                     trade_history_df["max_buy_direction_price"].iloc[-1] = float(max_buy_price)
-                    trade_history_df["close_all_when_market_reverse_price_at"].iloc[-1]  = float(max_buy_price) - 0.30 * (max_buy_price - first_buy_at)
+                    trade_history_df["close_all_when_market_reverse_price_at"].iloc[-1]  = float(max_buy_price) - 0.27 * (max_buy_price - first_buy_at)
                     # Write the updated DataFrame back to the CSV file
                     trade_history_df.to_csv(f"{symbol}_trade_history_df.csv", index=False)
-                elif trade_current_direction == "sell" and current_market_price < max_sell_direction_price:
+                elif trade_current_direction == "sell" and (current_market_price <= max_sell_direction_price):
                     self.logger.info(f"Current market buy price: {current_market_price} < max sell price {max_sell_direction_price}")
                     max_sell_price = current_market_price 
                     trade_history_df["max_sell_direction_price"].iloc[-1] = float(max_sell_price)
-                    trade_history_df["close_all_when_market_reverse_price_at"].iloc[-1] = float(max_sell_price) - 0.30 * (first_sell_at - max_sell_price)
+                    trade_history_df["close_all_when_market_reverse_price_at"].iloc[-1] = float(max_sell_price) - 0.27 * (first_sell_at - max_sell_price)
                     # Write the updated DataFrame back to the CSV file
                     trade_history_df.to_csv(f"{symbol}_trade_history_df.csv", index=False)
                 
 
                 self.logger.info(f"Current current_market_price: {current_market_price} | next buy price: {next_buy_at} | next sell price: {next_sell_at}")
                 self.logger.info(f"Keep holding...")
-
-
+                
             
             
-            time.sleep(30)
-        
-
+            # time.sleep(1800)
+            time.sleep(1800)
