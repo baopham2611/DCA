@@ -6,9 +6,10 @@ import os
 
 
 class MyHedgingDCABot:
-    def __init__(self, symbol,volume):
+    def __init__(self, symbol, volume, last_longest_devide_by10):
         self.symbol = symbol
         self.volume = volume
+        self.last_longest_devide_by10 = last_longest_devide_by10
 
         # Set up logger for this instance
         self.logger = logging.getLogger(self.symbol)  # Logger named after the symbol
@@ -227,8 +228,8 @@ class MyHedgingDCABot:
             "fib_number": first_fib_number,
             "next_fib_number": next_fib_number,
             "next_volume": next_fib_number * volume,
-            "next_buy_at": make_buy_order.price + 0.004,
-            "next_sell_at": make_sell_order.price - 0.004,
+            "next_buy_at": make_buy_order.price + self.last_longest_devide_by10,
+            "next_sell_at": make_sell_order.price - self.last_longest_devide_by10,
             "market_direction": None,
             "close_all_order_type": None,
             "max_buy_direction_price": make_buy_order.price,
@@ -307,8 +308,8 @@ class MyHedgingDCABot:
             "fib_number": int(fib_number),
             "next_fib_number": next_fib_number,
             "next_volume": next_volume,
-            "next_buy_at": make_buy_order.price + 0.004,
-            "next_sell_at": make_sell_order.price - 0.004,
+            "next_buy_at": make_buy_order.price + self.last_longest_devide_by10,
+            "next_sell_at": make_sell_order.price - self.last_longest_devide_by10,
             "market_direction": market_direction,
             "close_all_order_type": close_all_order_type,
             "max_buy_direction_price": make_buy_order.price,
@@ -382,6 +383,7 @@ class MyHedgingDCABot:
         is_has_open_orders = self.has_open_orders(symbol)
         self.logger.info(is_has_open_orders)
         
+        
         if is_has_open_orders == False:
             self.logger.info(f"Make first trade")
             self.make_first_order(symbol,volume)
@@ -404,45 +406,26 @@ class MyHedgingDCABot:
             
             # DCA for Buy direction
             if current_market_price >= next_buy_at: 
-                if trade_history_df["is_first_order_of_sequence"] == "True": 
-                    self.logger.info("current_market_price >= next_buy_at")
-                    buy_ticket = trade_history_df["buy_ticket"].iloc[-1]
-                    buy_volume = trade_history_df["buy_volume"].iloc[-1]
-                    self.close_last_order(symbol,"buy",buy_ticket,buy_volume)
-                    self.logger.info(f"Close last buy order: COMPLETED")
-                    self.make_next_buy_sell_order(symbol,volume,"buy")
-                    self.logger.info(f"Make next buy and sell orders: COMPLETED")
-                elif trade_history_df["is_first_order_of_sequence"] == "False" and trade_current_direction == "buy":
-                    self.logger.info("current_market_price >= next_buy_at")
-                    buy_ticket = trade_history_df["buy_ticket"].iloc[-1]
-                    buy_volume = trade_history_df["buy_volume"].iloc[-1]
-                    self.close_last_order(symbol,"buy",buy_ticket,buy_volume)
-                    self.logger.info(f"Close last buy order: COMPLETED")
-                    self.make_next_buy_sell_order(symbol,volume,"buy")
-                    self.logger.info(f"Make next buy and sell orders: COMPLETED")
-                else: 
-                    continue
+                self.logger.info("current_market_price >= next_buy_at")
+                buy_ticket = trade_history_df["buy_ticket"].iloc[-1]
+                buy_volume = trade_history_df["buy_volume"].iloc[-1]
+                self.close_last_order(symbol,"buy",buy_ticket,buy_volume)
+                self.logger.info(f"Close last buy order: COMPLETED")
+                self.make_next_buy_sell_order(symbol,volume,"buy")
+                self.logger.info(f"Make next buy and sell orders: COMPLETED")
             
             # DCA for Sell direction
             elif current_market_price <= next_sell_at: 
-                if trade_history_df["is_first_order_of_sequence"] == "True":
-                    self.logger.info("current_market_price <= next_sell_at")
-                    sell_ticket = trade_history_df["sell_ticket"].iloc[-1]
-                    sell_volume = trade_history_df["sell_volume"].iloc[-1]
-                    self.close_last_order(symbol,"sell",sell_ticket,sell_volume)
-                    self.logger.info(f"Close last sell order: COMPLETED")
-                    self.make_next_buy_sell_order(symbol,volume,"sell")
-                    self.logger.info(f"Make next buy and sell orders: COMPLETED")
-                elif trade_history_df["is_first_order_of_sequence"] == "False" and trade_current_direction == "sell":
-                    self.logger.info("current_market_price <= next_sell_at")
-                    sell_ticket = trade_history_df["sell_ticket"].iloc[-1]
-                    sell_volume = trade_history_df["sell_volume"].iloc[-1]
-                    self.close_last_order(symbol,"sell",sell_ticket,sell_volume)
-                    self.logger.info(f"Close last sell order: COMPLETED")
-                    self.make_next_buy_sell_order(symbol,volume,"sell")
-                    self.logger.info(f"Make next buy and sell orders: COMPLETED")
-                else: 
-                    continue
+                self.logger.info("current_market_price <= next_sell_at")
+                sell_ticket = trade_history_df["sell_ticket"].iloc[-1]
+                sell_volume = trade_history_df["sell_volume"].iloc[-1]
+                self.close_last_order(symbol,"sell",sell_ticket,sell_volume)
+                self.logger.info(f"Close last sell order: COMPLETED")
+                self.make_next_buy_sell_order(symbol,volume,"sell")
+                self.logger.info(f"Make next buy and sell orders: COMPLETED")
+                    
+                
+               
 
             # Close Bot when price reverse more than 27%
             elif trade_current_direction == "buy" and current_market_price <= close_all_when_market_reverse_price_at:
@@ -489,4 +472,4 @@ class MyHedgingDCABot:
             
             
             # time.sleep(1800)
-            time.sleep(1800)
+            time.sleep(900)
