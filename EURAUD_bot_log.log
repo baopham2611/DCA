@@ -1,0 +1,8 @@
+2024-02-14 19:58:11,766 - INFO - =====================PROGRAM START====================
+2024-02-14 19:58:11,814 - INFO - Data frame has been created. File name: EURAUD_trade_history_df.csv
+2024-02-14 19:58:11,846 - INFO - False
+2024-02-14 19:58:11,846 - INFO - Make first trade
+2024-02-14 19:58:35,749 - INFO - =====================PROGRAM START====================
+2024-02-14 19:58:35,749 - INFO - File EURAUD_trade_history_df.csv already exists. Skipping creation.
+2024-02-14 19:58:35,763 - INFO - False
+2024-02-14 19:58:35,763 - INFO - Make first trade

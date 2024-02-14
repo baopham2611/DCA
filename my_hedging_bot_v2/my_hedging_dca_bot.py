@@ -15,8 +15,18 @@ class MyHedgingDCABot:
         # Set up logger for this instance
         self.logger = logging.getLogger(self.symbol)  # Logger named after the symbol
         self.logger.setLevel(logging.INFO)
+
+        log_path = "./info_log/"
+        trade_path = "./traded/"
+        log_filename = f"./info_log/{self.symbol}_bot_log.log"
+
+        if not os.path.exists(log_path):
+            os.makedirs(log_path)
+
+        if not os.path.exists(trade_path):
+            os.makedirs(trade_path)
+
         
-        log_filename = f"{self.symbol}_bot_log.log"
         file_handler = logging.FileHandler(log_filename, 'a', 'utf-8')
         formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
         file_handler.setFormatter(formatter)
@@ -54,7 +64,7 @@ class MyHedgingDCABot:
                     "close_all_when_market_reverse_price_at",
                     "is_first_order_of_sequence",
                 ]
-        df_file_name = f"{symbol}_trade_history_df.csv"
+        df_file_name = f"./traded/{symbol}_trade_history_df.csv"
         
         # Check if the file already exists
         if os.path.exists(df_file_name):
@@ -98,7 +108,7 @@ class MyHedgingDCABot:
 
     def close_last_order(self, symbol,type,ticket,volume):
         tick = mt5.symbol_info_tick(symbol)
-        trade_history_df = pd.read_csv(f"{symbol}_trade_history_df.csv")
+        trade_history_df = pd.read_csv(f"./traded/{symbol}_trade_history_df.csv")
         
         if not tick:
             self.logger.info(f"Failed to fetch tick for {symbol}")
@@ -148,7 +158,7 @@ class MyHedgingDCABot:
                 trade_history_df["sell_status"].iloc[-1] = "close"
 
             # Write the updated DataFrame back to the CSV file
-            trade_history_df.to_csv(f"{symbol}_trade_history_df.csv", index=False)
+            trade_history_df.to_csv(f"./traded/{symbol}_trade_history_df.csv", index=False)
         else:
             self.logger.info("Failed to send order. Return code:", result.retcode if result else "No result")
             self.logger.info("Error:", mt5.last_error())  # This will print the last error from MT5
@@ -158,7 +168,7 @@ class MyHedgingDCABot:
 
 
     def has_open_orders(self,symbol):
-        trade_history_df = pd.read_csv(f"{symbol}_trade_history_df.csv")
+        trade_history_df = pd.read_csv(f"./traded/{symbol}_trade_history_df.csv")
         if trade_history_df.empty:
             return False
         
@@ -242,20 +252,20 @@ class MyHedgingDCABot:
             "close_all_when_market_reverse_price_at": None,
             "is_first_order_of_sequence": True  # Assuming this is the first order of the sequence
         }
-        trade_history_df = pd.read_csv(f"{symbol}_trade_history_df.csv")
+        trade_history_df = pd.read_csv(f"./traded/{symbol}_trade_history_df.csv")
         # Append the new row to the DataFrame
         trade_history_df = pd.concat([trade_history_df, pd.DataFrame([first_trade_row])], ignore_index=True)
 
         # Save the updated DataFrame back to the CSV
-        trade_history_df.to_csv(f"{symbol}_trade_history_df.csv", index=False)
+        trade_history_df.to_csv(f"./traded/{symbol}_trade_history_df.csv", index=False)
 
-        self.logger.info(f"Data frame has been updated. File name: {symbol}_trade_history_df.csv")
+        self.logger.info(f"Data frame has been updated. File name: ./traded/{symbol}_trade_history_df.csv")
 
 
 
     def make_next_buy_sell_order(self,symbol,volume,market_direction):
         # Get dataframe
-        trade_history_df = pd.read_csv(f"{symbol}_trade_history_df.csv")
+        trade_history_df = pd.read_csv(f"./traded/{symbol}_trade_history_df.csv")
         
         last_fib_number = float(trade_history_df["fib_number"].iloc[-1])
         fib_number = float(trade_history_df["next_fib_number"].iloc[-1])
@@ -327,13 +337,13 @@ class MyHedgingDCABot:
         trade_history_df = pd.concat([trade_history_df, pd.DataFrame([next_trade_row])], ignore_index=True)
 
         # Save the updated DataFrame back to the CSV
-        trade_history_df.to_csv(f"{symbol}_trade_history_df.csv", index=False)
+        trade_history_df.to_csv(f"./traded/{symbol}_trade_history_df.csv", index=False)
 
-        self.logger.info(f"Data frame has been updated. File name: {symbol}_trade_history_df.csv")
+        self.logger.info(f"Data frame has been updated. File name: ./traded/{symbol}_trade_history_df.csv")
 
 
     def close_position(self,position,symbol):
-        trade_history_df = pd.read_csv(f"{symbol}_trade_history_df.csv")
+        trade_history_df = pd.read_csv(f"./traded/{symbol}_trade_history_df.csv")
         tick = mt5.symbol_info_tick(position.symbol)
         if not tick:
             self.logger.info(f"Failed to fetch tick for {position.symbol}")
@@ -362,7 +372,7 @@ class MyHedgingDCABot:
                 trade_history_df["sell_status"].iloc[-1] = "close"
 
             # Write the updated DataFrame back to the CSV file
-            trade_history_df.to_csv(f"{symbol}_trade_history_df.csv", index=False)
+            trade_history_df.to_csv(f"./traded/{symbol}_trade_history_df.csv", index=False)
         else:
             self.logger.info("Failed to send order. Return code:", result.retcode if result else "No result")
             self.logger.info("Error:", mt5.last_error())  # This will print the last error from MT5
@@ -374,10 +384,10 @@ class MyHedgingDCABot:
         position = mt5.positions_get(symbol=symbol)
         for position in position:
             self.close_position(position,symbol)
-            trade_history_df = pd.read_csv(f"{symbol}_trade_history_df.csv")
+            trade_history_df = pd.read_csv(f"./traded/{symbol}_trade_history_df.csv")
             trade_history_df["sell_status"] = "close"
             trade_history_df["buy_status"] = "close"
-            trade_history_df.to_csv(f"{symbol}_trade_history_df.csv", index=False)
+            trade_history_df.to_csv(f"./traded/{symbol}_trade_history_df.csv", index=False)
 
 
     def run(self):
@@ -398,7 +408,7 @@ class MyHedgingDCABot:
 
 
         while True:
-            trade_history_df = pd.read_csv(f"{symbol}_trade_history_df.csv")
+            trade_history_df = pd.read_csv(f"./traded/{symbol}_trade_history_df.csv")
             current_market_price = float(self.get_current_market_price(symbol))
             next_buy_at = float(trade_history_df["next_buy_at"].iloc[-1])
             next_sell_at = float(trade_history_df["next_sell_at"].iloc[-1])
@@ -461,14 +471,14 @@ class MyHedgingDCABot:
                     trade_history_df["max_buy_direction_price"].iloc[-1] = float(max_buy_price)
                     trade_history_df["close_all_when_market_reverse_price_at"].iloc[-1]  = float(max_buy_price) - 0.27 * (max_buy_price - first_buy_at)
                     # Write the updated DataFrame back to the CSV file
-                    trade_history_df.to_csv(f"{symbol}_trade_history_df.csv", index=False)
+                    trade_history_df.to_csv(f"./traded/{symbol}_trade_history_df.csv", index=False)
                 elif trade_current_direction == "sell" and (current_market_price <= max_sell_direction_price):
                     self.logger.info(f"Current market buy price: {current_market_price} < max sell price {max_sell_direction_price}")
                     max_sell_price = current_market_price 
                     trade_history_df["max_sell_direction_price"].iloc[-1] = float(max_sell_price)
                     trade_history_df["close_all_when_market_reverse_price_at"].iloc[-1] = float(max_sell_price) - 0.27 * (first_sell_at - max_sell_price)
                     # Write the updated DataFrame back to the CSV file
-                    trade_history_df.to_csv(f"{symbol}_trade_history_df.csv", index=False)
+                    trade_history_df.to_csv(f"./traded/{symbol}_trade_history_df.csv", index=False)
                 
 
                 self.logger.info(f"Current current_market_price: {current_market_price} | next buy price: {next_buy_at} | next sell price: {next_sell_at}")

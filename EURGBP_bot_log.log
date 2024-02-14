@@ -1,0 +1,8 @@
+2024-02-14 19:58:11,788 - INFO - =====================PROGRAM START====================
+2024-02-14 19:58:11,814 - INFO - Data frame has been created. File name: EURGBP_trade_history_df.csv
+2024-02-14 19:58:11,855 - INFO - False
+2024-02-14 19:58:11,855 - INFO - Make first trade
+2024-02-14 19:58:35,749 - INFO - =====================PROGRAM START====================
+2024-02-14 19:58:35,749 - INFO - File EURGBP_trade_history_df.csv already exists. Skipping creation.
+2024-02-14 19:58:35,770 - INFO - False
+2024-02-14 19:58:35,770 - INFO - Make first trade
