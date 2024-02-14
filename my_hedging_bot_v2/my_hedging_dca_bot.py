@@ -6,9 +6,10 @@ import os
 
 
 class MyHedgingDCABot:
-    def __init__(self, symbol, volume, last_longest_devide_by10):
+    def __init__(self, symbol, volume, last_longest_devide_by10, sleeptime):
         self.symbol = symbol
         self.volume = volume
+        self.sleeptime = sleeptime
         self.last_longest_devide_by10 = last_longest_devide_by10
 
         # Set up logger for this instance
@@ -167,6 +168,10 @@ class MyHedgingDCABot:
         self.logger.info(f"last_trade_sell_status : {last_trade_sell_status}")
         
         if last_trade_buy_status == "open" and last_trade_sell_status == "open":
+            return True
+        if last_trade_buy_status == "open" and last_trade_sell_status == "close":
+            return True
+        elif last_trade_buy_status == "close" and last_trade_sell_status == "open":
             return True
         elif last_trade_buy_status == "close" and last_trade_sell_status == "close":
             return False
@@ -378,7 +383,7 @@ class MyHedgingDCABot:
     def run(self):
         symbol = self.symbol
         volume = self.volume
-        self.logger.info(f"PROGRAM START")
+        self.logger.info(f"=====================PROGRAM START====================")
         self.create_trade_history_df(symbol)
         is_has_open_orders = self.has_open_orders(symbol)
         self.logger.info(is_has_open_orders)
@@ -432,7 +437,7 @@ class MyHedgingDCABot:
                 self.logger.info(f"Market reverse 30% from buy direction to sell")
                 self.close_all_when_market_reverse_price_at_30pct(symbol)
                 self.logger.info(f"Close all of the orders: SUCCESSFULLY")
-                self.logger.info(f"Bot existing ...")
+                self.logger.info(f"=====================Bot existing ...=====================")
                 exit()
 
             # Close Bot when price reverse more than 27%
@@ -440,7 +445,7 @@ class MyHedgingDCABot:
                 self.logger.info(f"Market reverse 30% from sell direction to buy") 
                 self.close_all_when_market_reverse_price_at_30pct(symbol)
                 self.logger.info(f"Close all of the orders: SUCCESSFULLY")
-                self.logger.info(f"Bot existing ...")
+                self.logger.info(f"=====================Bot existing ...=====================")
                 exit()
                 
                 
@@ -472,4 +477,4 @@ class MyHedgingDCABot:
             
             
             # time.sleep(1800)
-            time.sleep(900)
+            time.sleep(self.sleeptime)

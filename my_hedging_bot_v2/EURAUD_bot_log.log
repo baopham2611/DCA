@@ -1,0 +1,1432 @@
+2023-11-15 01:22:06,130 - INFO - =====================PROGRAM START====================
+2023-11-15 01:22:06,145 - INFO - Data frame has been created. File name: EURAUD_trade_history_df.csv
+2023-11-15 01:22:07,400 - INFO - False
+2023-11-15 01:22:09,263 - INFO - Make first trade
+2023-11-15 01:22:09,862 - INFO - Account Balance: 6132.22
+2023-11-15 01:22:09,862 - INFO - Account Equity: 6132.23
+2023-11-15 01:22:11,093 - INFO - Account Margin: 2087.06
+2023-11-15 01:22:11,093 - INFO - Account Free Margin: 4045.17
+2023-11-15 01:22:11,093 - INFO - fib number :1
+2023-11-15 01:22:11,093 - INFO - Symbol Margin Required for 1 lot: 0.0
+2023-11-15 01:22:11,093 - INFO - File EURAUD_trade_history_df.csv already exists. Skipping creation.
+2023-11-15 01:22:11,705 - INFO - order_result: OrderSendResult(retcode=10009, deal=381983968, order=524131138, volume=0.01, price=1.67313, bid=1.6731099999999999, ask=1.67313, comment='Request executed', request_id=1838952243, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.01, price=1.67313, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=0, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-15 01:22:12,308 - INFO - order_result: OrderSendResult(retcode=10009, deal=381983972, order=524131142, volume=0.01, price=1.67309, bid=1.67309, ask=1.6731500000000001, comment='Request executed', request_id=1838952244, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.01, price=1.6731099999999999, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=1, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-15 01:22:13,603 - INFO - Data frame has been updated. File name: EURAUD_trade_history_df.csv
+2023-11-15 01:22:13,666 - INFO - trade_current_direction: nan
+2023-11-15 01:22:13,667 - INFO - max_buy_direction_price: 1.67313
+2023-11-15 01:22:13,668 - INFO - max_sell_direction_price: 1.67309
+2023-11-15 01:22:13,668 - INFO - Current current_market_price: 1.67313 | next buy price: 1.67513 | next sell price: 1.67109
+2023-11-15 01:22:13,668 - INFO - Keep holding...
+2023-11-15 01:37:13,700 - INFO - trade_current_direction: nan
+2023-11-15 01:37:13,700 - INFO - max_buy_direction_price: 1.67313
+2023-11-15 01:37:13,700 - INFO - max_sell_direction_price: 1.67309
+2023-11-15 01:37:13,700 - INFO - Current current_market_price: 1.67269 | next buy price: 1.67513 | next sell price: 1.67109
+2023-11-15 01:37:13,700 - INFO - Keep holding...
+2023-11-15 01:52:13,716 - INFO - trade_current_direction: nan
+2023-11-15 01:52:13,732 - INFO - max_buy_direction_price: 1.67313
+2023-11-15 01:52:13,732 - INFO - max_sell_direction_price: 1.67309
+2023-11-15 01:52:13,732 - INFO - Current current_market_price: 1.67241 | next buy price: 1.67513 | next sell price: 1.67109
+2023-11-15 01:52:13,732 - INFO - Keep holding...
+2023-11-15 02:07:13,764 - INFO - trade_current_direction: nan
+2023-11-15 02:07:13,764 - INFO - max_buy_direction_price: 1.67313
+2023-11-15 02:07:13,764 - INFO - max_sell_direction_price: 1.67309
+2023-11-15 02:07:13,764 - INFO - Current current_market_price: 1.67291 | next buy price: 1.67513 | next sell price: 1.67109
+2023-11-15 02:07:13,764 - INFO - Keep holding...
+2023-11-15 02:22:13,786 - INFO - trade_current_direction: nan
+2023-11-15 02:22:13,786 - INFO - max_buy_direction_price: 1.67313
+2023-11-15 02:22:13,786 - INFO - max_sell_direction_price: 1.67309
+2023-11-15 02:22:13,786 - INFO - Current current_market_price: 1.67241 | next buy price: 1.67513 | next sell price: 1.67109
+2023-11-15 02:22:13,786 - INFO - Keep holding...
+2023-11-15 02:37:13,824 - INFO - trade_current_direction: nan
+2023-11-15 02:37:13,824 - INFO - max_buy_direction_price: 1.67313
+2023-11-15 02:37:13,824 - INFO - max_sell_direction_price: 1.67309
+2023-11-15 02:37:13,824 - INFO - Current current_market_price: 1.67214 | next buy price: 1.67513 | next sell price: 1.67109
+2023-11-15 02:37:13,824 - INFO - Keep holding...
+2023-11-15 02:52:13,858 - INFO - trade_current_direction: nan
+2023-11-15 02:52:13,858 - INFO - max_buy_direction_price: 1.67313
+2023-11-15 02:52:13,858 - INFO - max_sell_direction_price: 1.67309
+2023-11-15 02:52:13,858 - INFO - Current current_market_price: 1.67184 | next buy price: 1.67513 | next sell price: 1.67109
+2023-11-15 02:52:13,858 - INFO - Keep holding...
+2023-11-15 03:07:13,890 - INFO - trade_current_direction: nan
+2023-11-15 03:07:13,890 - INFO - max_buy_direction_price: 1.67313
+2023-11-15 03:07:13,890 - INFO - max_sell_direction_price: 1.67309
+2023-11-15 03:07:13,890 - INFO - Current current_market_price: 1.6722700000000001 | next buy price: 1.67513 | next sell price: 1.67109
+2023-11-15 03:07:13,890 - INFO - Keep holding...
+2023-11-15 03:22:13,899 - INFO - trade_current_direction: nan
+2023-11-15 03:22:13,899 - INFO - max_buy_direction_price: 1.67313
+2023-11-15 03:22:13,914 - INFO - max_sell_direction_price: 1.67309
+2023-11-15 03:22:13,914 - INFO - Current current_market_price: 1.67224 | next buy price: 1.67513 | next sell price: 1.67109
+2023-11-15 03:22:13,914 - INFO - Keep holding...
+2023-11-15 03:37:13,932 - INFO - trade_current_direction: nan
+2023-11-15 03:37:13,948 - INFO - max_buy_direction_price: 1.67313
+2023-11-15 03:37:13,948 - INFO - max_sell_direction_price: 1.67309
+2023-11-15 03:37:13,948 - INFO - Current current_market_price: 1.67174 | next buy price: 1.67513 | next sell price: 1.67109
+2023-11-15 03:37:13,948 - INFO - Keep holding...
+2023-11-15 03:52:13,963 - INFO - trade_current_direction: nan
+2023-11-15 03:52:13,963 - INFO - max_buy_direction_price: 1.67313
+2023-11-15 03:52:13,963 - INFO - max_sell_direction_price: 1.67309
+2023-11-15 03:52:13,963 - INFO - Current current_market_price: 1.67221 | next buy price: 1.67513 | next sell price: 1.67109
+2023-11-15 03:52:13,963 - INFO - Keep holding...
+2023-11-15 04:07:13,972 - INFO - trade_current_direction: nan
+2023-11-15 04:07:13,972 - INFO - max_buy_direction_price: 1.67313
+2023-11-15 04:07:13,972 - INFO - max_sell_direction_price: 1.67309
+2023-11-15 04:07:13,972 - INFO - Current current_market_price: 1.67224 | next buy price: 1.67513 | next sell price: 1.67109
+2023-11-15 04:07:13,972 - INFO - Keep holding...
+2023-11-15 04:22:13,988 - INFO - trade_current_direction: nan
+2023-11-15 04:22:13,988 - INFO - max_buy_direction_price: 1.67313
+2023-11-15 04:22:13,988 - INFO - max_sell_direction_price: 1.67309
+2023-11-15 04:22:13,988 - INFO - Current current_market_price: 1.67168 | next buy price: 1.67513 | next sell price: 1.67109
+2023-11-15 04:22:13,988 - INFO - Keep holding...
+2023-11-15 04:37:14,004 - INFO - trade_current_direction: nan
+2023-11-15 04:37:14,004 - INFO - max_buy_direction_price: 1.67313
+2023-11-15 04:37:14,004 - INFO - max_sell_direction_price: 1.67309
+2023-11-15 04:37:14,004 - INFO - Current current_market_price: 1.6713200000000001 | next buy price: 1.67513 | next sell price: 1.67109
+2023-11-15 04:37:14,004 - INFO - Keep holding...
+2023-11-15 04:52:14,030 - INFO - trade_current_direction: nan
+2023-11-15 04:52:14,030 - INFO - max_buy_direction_price: 1.67313
+2023-11-15 04:52:14,030 - INFO - max_sell_direction_price: 1.67309
+2023-11-15 04:52:14,030 - INFO - Current current_market_price: 1.67174 | next buy price: 1.67513 | next sell price: 1.67109
+2023-11-15 04:52:14,030 - INFO - Keep holding...
+2023-11-15 05:07:14,059 - INFO - trade_current_direction: nan
+2023-11-15 05:07:14,059 - INFO - max_buy_direction_price: 1.67313
+2023-11-15 05:07:14,059 - INFO - max_sell_direction_price: 1.67309
+2023-11-15 05:07:14,059 - INFO - Current current_market_price: 1.67253 | next buy price: 1.67513 | next sell price: 1.67109
+2023-11-15 05:07:14,059 - INFO - Keep holding...
+2023-11-15 05:22:14,080 - INFO - trade_current_direction: nan
+2023-11-15 05:22:14,080 - INFO - max_buy_direction_price: 1.67313
+2023-11-15 05:22:14,080 - INFO - max_sell_direction_price: 1.67309
+2023-11-15 05:22:14,080 - INFO - Current current_market_price: 1.6728100000000001 | next buy price: 1.67513 | next sell price: 1.67109
+2023-11-15 05:22:14,080 - INFO - Keep holding...
+2023-11-15 05:37:14,110 - INFO - trade_current_direction: nan
+2023-11-15 05:37:14,110 - INFO - max_buy_direction_price: 1.67313
+2023-11-15 05:37:14,110 - INFO - max_sell_direction_price: 1.67309
+2023-11-15 05:37:14,110 - INFO - Current current_market_price: 1.67309 | next buy price: 1.67513 | next sell price: 1.67109
+2023-11-15 05:37:14,110 - INFO - Keep holding...
+2023-11-15 05:52:14,148 - INFO - trade_current_direction: nan
+2023-11-15 05:52:14,148 - INFO - max_buy_direction_price: 1.67313
+2023-11-15 05:52:14,163 - INFO - max_sell_direction_price: 1.67309
+2023-11-15 05:52:14,163 - INFO - Current current_market_price: 1.67283 | next buy price: 1.67513 | next sell price: 1.67109
+2023-11-15 05:52:14,163 - INFO - Keep holding...
+2023-11-15 06:07:14,170 - INFO - trade_current_direction: nan
+2023-11-15 06:07:14,170 - INFO - max_buy_direction_price: 1.67313
+2023-11-15 06:07:14,170 - INFO - max_sell_direction_price: 1.67309
+2023-11-15 06:07:14,170 - INFO - Current current_market_price: 1.6724999999999999 | next buy price: 1.67513 | next sell price: 1.67109
+2023-11-15 06:07:14,170 - INFO - Keep holding...
+2023-11-15 06:22:14,214 - INFO - trade_current_direction: nan
+2023-11-15 06:22:14,214 - INFO - max_buy_direction_price: 1.67313
+2023-11-15 06:22:14,214 - INFO - max_sell_direction_price: 1.67309
+2023-11-15 06:22:14,214 - INFO - Current current_market_price: 1.67272 | next buy price: 1.67513 | next sell price: 1.67109
+2023-11-15 06:22:14,214 - INFO - Keep holding...
+2023-11-15 06:37:14,241 - INFO - trade_current_direction: nan
+2023-11-15 06:37:14,241 - INFO - max_buy_direction_price: 1.67313
+2023-11-15 06:37:14,241 - INFO - max_sell_direction_price: 1.67309
+2023-11-15 06:37:14,241 - INFO - Current current_market_price: 1.67316 | next buy price: 1.67513 | next sell price: 1.67109
+2023-11-15 06:37:14,241 - INFO - Keep holding...
+2023-11-15 06:52:14,269 - INFO - trade_current_direction: nan
+2023-11-15 06:52:14,269 - INFO - max_buy_direction_price: 1.67313
+2023-11-15 06:52:14,269 - INFO - max_sell_direction_price: 1.67309
+2023-11-15 06:52:14,269 - INFO - Current current_market_price: 1.67375 | next buy price: 1.67513 | next sell price: 1.67109
+2023-11-15 06:52:14,269 - INFO - Keep holding...
+2023-11-15 07:07:14,285 - INFO - trade_current_direction: nan
+2023-11-15 07:07:14,285 - INFO - max_buy_direction_price: 1.67313
+2023-11-15 07:07:14,285 - INFO - max_sell_direction_price: 1.67309
+2023-11-15 07:07:14,285 - INFO - Current current_market_price: 1.67441 | next buy price: 1.67513 | next sell price: 1.67109
+2023-11-15 07:07:14,285 - INFO - Keep holding...
+2023-11-15 07:22:14,312 - INFO - trade_current_direction: nan
+2023-11-15 07:22:14,312 - INFO - max_buy_direction_price: 1.67313
+2023-11-15 07:22:14,312 - INFO - max_sell_direction_price: 1.67309
+2023-11-15 07:22:14,312 - INFO - Current current_market_price: 1.6745700000000001 | next buy price: 1.67513 | next sell price: 1.67109
+2023-11-15 07:22:14,312 - INFO - Keep holding...
+2023-11-15 07:37:14,342 - INFO - trade_current_direction: nan
+2023-11-15 07:37:14,342 - INFO - max_buy_direction_price: 1.67313
+2023-11-15 07:37:14,342 - INFO - max_sell_direction_price: 1.67309
+2023-11-15 07:37:14,342 - INFO - Current current_market_price: 1.6743299999999999 | next buy price: 1.67513 | next sell price: 1.67109
+2023-11-15 07:37:14,342 - INFO - Keep holding...
+2023-11-15 07:52:14,372 - INFO - trade_current_direction: nan
+2023-11-15 07:52:14,372 - INFO - max_buy_direction_price: 1.67313
+2023-11-15 07:52:14,372 - INFO - max_sell_direction_price: 1.67309
+2023-11-15 07:52:14,372 - INFO - Current current_market_price: 1.67461 | next buy price: 1.67513 | next sell price: 1.67109
+2023-11-15 07:52:14,372 - INFO - Keep holding...
+2023-11-15 08:07:14,380 - INFO - trade_current_direction: nan
+2023-11-15 08:07:14,380 - INFO - max_buy_direction_price: 1.67313
+2023-11-15 08:07:14,395 - INFO - max_sell_direction_price: 1.67309
+2023-11-15 08:07:14,395 - INFO - Current current_market_price: 1.67424 | next buy price: 1.67513 | next sell price: 1.67109
+2023-11-15 08:07:14,395 - INFO - Keep holding...
+2023-11-15 08:22:14,408 - INFO - current_market_price >= next_buy_at
+2023-11-15 08:22:14,423 - INFO - 1
+                524131138
+                EURAUD
+                0.01
+                1
+                1.67313
+                0
+                1
+              
+2023-11-15 08:22:15,033 - INFO - Close last buy order: COMPLETED
+2023-11-15 08:22:15,049 - INFO - Account Balance: 6133.11
+2023-11-15 08:22:15,049 - INFO - Account Equity: 6131.43
+2023-11-15 08:22:15,049 - INFO - Account Margin: 1087.08
+2023-11-15 08:22:15,049 - INFO - Account Free Margin: 5044.35
+2023-11-15 08:22:15,659 - INFO - order_result: OrderSendResult(retcode=10009, deal=382116518, order=524293616, volume=0.01, price=1.67529, bid=1.6752099999999999, ask=1.67529, comment='Request executed', request_id=1838952258, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.01, price=1.67529, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=0, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-15 08:22:16,268 - INFO - order_result: OrderSendResult(retcode=10009, deal=382116525, order=524293624, volume=0.01, price=1.67515, bid=1.67515, ask=1.67526, comment='Request executed', request_id=1838952259, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.01, price=1.6752099999999999, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=1, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-15 08:22:16,268 - INFO - Data frame has been updated. File name: EURAUD_trade_history_df.csv
+2023-11-15 08:22:16,268 - INFO - Make next buy and sell orders: COMPLETED
+2023-11-15 08:37:16,306 - INFO - trade_current_direction: buy
+2023-11-15 08:37:16,306 - INFO - max_buy_direction_price: 1.67529
+2023-11-15 08:37:16,306 - INFO - max_sell_direction_price: 1.67515
+2023-11-15 08:37:16,306 - INFO - Current market buy price: 1.6756 > max buy price 1.67529
+2023-11-15 08:37:16,322 - INFO - Current current_market_price: 1.6756 | next buy price: 1.67729 | next sell price: 1.67315
+2023-11-15 08:37:16,322 - INFO - Keep holding...
+2023-11-15 08:52:16,357 - INFO - Market reverse 30% from buy direction to sell
+2023-11-15 08:52:18,233 - INFO - Close all of the orders: SUCCESSFULLY
+2023-11-15 08:52:18,233 - INFO - =====================Bot existing ...=====================
+2023-11-15 09:16:36,532 - INFO - =====================PROGRAM START====================
+2023-11-15 09:16:36,532 - INFO - File EURAUD_trade_history_df.csv already exists. Skipping creation.
+2023-11-15 09:16:36,548 - INFO - last_trade_buy_status : close
+2023-11-15 09:16:36,548 - INFO - last_trade_sell_status : close
+2023-11-15 09:16:36,548 - INFO - False
+2023-11-15 09:16:36,548 - INFO - Make first trade
+2023-11-15 09:16:36,548 - INFO - Account Balance: 6131.7
+2023-11-15 09:16:36,548 - INFO - Account Equity: 6131.5
+2023-11-15 09:16:36,548 - INFO - Account Margin: 0.0
+2023-11-15 09:16:36,548 - INFO - Account Free Margin: 6131.5
+2023-11-15 09:16:36,548 - INFO - fib number :1
+2023-11-15 09:16:36,548 - INFO - Symbol Margin Required for 1 lot: 0.0
+2023-11-15 09:16:36,548 - INFO - File EURAUD_trade_history_df.csv already exists. Skipping creation.
+2023-11-15 09:16:37,177 - INFO - order_result: OrderSendResult(retcode=10009, deal=382132573, order=524313959, volume=0.01, price=1.67415, bid=1.67408, ask=1.67415, comment='Request executed', request_id=1838952263, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.01, price=1.67415, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=0, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-15 09:16:37,787 - INFO - order_result: OrderSendResult(retcode=10009, deal=382132576, order=524313962, volume=0.01, price=1.67408, bid=1.67408, ask=1.67415, comment='Request executed', request_id=1838952264, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.01, price=1.67408, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=1, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-15 09:16:39,052 - INFO - Data frame has been updated. File name: EURAUD_trade_history_df.csv
+2023-11-15 09:16:39,068 - INFO - trade_current_direction: nan
+2023-11-15 09:16:39,068 - INFO - max_buy_direction_price: 1.67415
+2023-11-15 09:16:39,068 - INFO - max_sell_direction_price: 1.67408
+2023-11-15 09:16:39,068 - INFO - Current current_market_price: 1.67415 | next buy price: 1.67615 | next sell price: 1.67208
+2023-11-15 09:16:39,068 - INFO - Keep holding...
+2023-11-15 09:31:39,080 - INFO - trade_current_direction: nan
+2023-11-15 09:31:39,080 - INFO - max_buy_direction_price: 1.67415
+2023-11-15 09:31:39,080 - INFO - max_sell_direction_price: 1.67408
+2023-11-15 09:31:39,080 - INFO - Current current_market_price: 1.6744599999999998 | next buy price: 1.67615 | next sell price: 1.67208
+2023-11-15 09:31:39,080 - INFO - Keep holding...
+2023-11-15 09:46:39,099 - INFO - trade_current_direction: nan
+2023-11-15 09:46:39,099 - INFO - max_buy_direction_price: 1.67415
+2023-11-15 09:46:39,099 - INFO - max_sell_direction_price: 1.67408
+2023-11-15 09:46:39,099 - INFO - Current current_market_price: 1.67379 | next buy price: 1.67615 | next sell price: 1.67208
+2023-11-15 09:46:39,099 - INFO - Keep holding...
+2023-11-15 10:01:39,115 - INFO - trade_current_direction: nan
+2023-11-15 10:01:39,115 - INFO - max_buy_direction_price: 1.67415
+2023-11-15 10:01:39,115 - INFO - max_sell_direction_price: 1.67408
+2023-11-15 10:01:39,115 - INFO - Current current_market_price: 1.67287 | next buy price: 1.67615 | next sell price: 1.67208
+2023-11-15 10:01:39,115 - INFO - Keep holding...
+2023-11-15 10:16:39,136 - INFO - trade_current_direction: nan
+2023-11-15 10:16:39,136 - INFO - max_buy_direction_price: 1.67415
+2023-11-15 10:16:39,136 - INFO - max_sell_direction_price: 1.67408
+2023-11-15 10:16:39,136 - INFO - Current current_market_price: 1.6731500000000001 | next buy price: 1.67615 | next sell price: 1.67208
+2023-11-15 10:16:39,136 - INFO - Keep holding...
+2023-11-15 10:31:39,154 - INFO - trade_current_direction: nan
+2023-11-15 10:31:39,154 - INFO - max_buy_direction_price: 1.67415
+2023-11-15 10:31:39,154 - INFO - max_sell_direction_price: 1.67408
+2023-11-15 10:31:39,154 - INFO - Current current_market_price: 1.6734900000000001 | next buy price: 1.67615 | next sell price: 1.67208
+2023-11-15 10:31:39,154 - INFO - Keep holding...
+2023-11-15 10:46:39,171 - INFO - trade_current_direction: nan
+2023-11-15 10:46:39,171 - INFO - max_buy_direction_price: 1.67415
+2023-11-15 10:46:39,171 - INFO - max_sell_direction_price: 1.67408
+2023-11-15 10:46:39,171 - INFO - Current current_market_price: 1.67352 | next buy price: 1.67615 | next sell price: 1.67208
+2023-11-15 10:46:39,171 - INFO - Keep holding...
+2023-11-15 11:01:40,718 - INFO - trade_current_direction: nan
+2023-11-15 11:01:40,718 - INFO - max_buy_direction_price: 1.67415
+2023-11-15 11:01:40,718 - INFO - max_sell_direction_price: 1.67408
+2023-11-15 11:01:40,718 - INFO - Current current_market_price: 1.6734200000000001 | next buy price: 1.67615 | next sell price: 1.67208
+2023-11-15 11:01:40,718 - INFO - Keep holding...
+2023-11-15 11:16:40,726 - INFO - trade_current_direction: nan
+2023-11-15 11:16:40,726 - INFO - max_buy_direction_price: 1.67415
+2023-11-15 11:16:40,726 - INFO - max_sell_direction_price: 1.67408
+2023-11-15 11:16:40,726 - INFO - Current current_market_price: 1.67346 | next buy price: 1.67615 | next sell price: 1.67208
+2023-11-15 11:16:40,726 - INFO - Keep holding...
+2023-11-15 22:31:41,985 - INFO - =====================PROGRAM START====================
+2023-11-15 22:31:41,985 - INFO - File EURAUD_trade_history_df.csv already exists. Skipping creation.
+2023-11-15 22:31:42,001 - INFO - last_trade_buy_status : open
+2023-11-15 22:31:42,001 - INFO - last_trade_sell_status : open
+2023-11-15 22:31:42,001 - INFO - True
+2023-11-15 22:31:42,001 - INFO - Already has opened order
+2023-11-15 22:31:42,016 - INFO - current_market_price <= next_sell_at
+2023-11-15 22:31:42,719 - INFO - 1
+                524313962
+                EURAUD
+                0.01
+                0
+                1.67408
+                0
+                1
+              
+2023-11-15 22:31:43,407 - INFO - Close last sell order: COMPLETED
+2023-11-15 22:31:46,828 - INFO - Account Balance: 6148.65
+2023-11-15 22:31:46,828 - INFO - Account Equity: 6131.03
+2023-11-15 22:31:46,828 - INFO - Account Margin: 4508.98
+2023-11-15 22:31:46,828 - INFO - Account Free Margin: 1622.05
+2023-11-15 22:31:47,484 - INFO - order_result: OrderSendResult(retcode=10009, deal=382694353, order=524937758, volume=0.01, price=1.66767, bid=1.66763, ask=1.66767, comment='Request executed', request_id=2328103492, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.01, price=1.66768, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=0, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-15 22:31:49,109 - INFO - order_result: OrderSendResult(retcode=10009, deal=382694364, order=524937769, volume=0.01, price=1.66763, bid=1.66763, ask=1.66768, comment='Request executed', request_id=2328103493, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.01, price=1.66763, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=1, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-15 22:31:49,109 - INFO - Data frame has been updated. File name: EURAUD_trade_history_df.csv
+2023-11-15 22:31:49,109 - INFO - Make next buy and sell orders: COMPLETED
+2023-11-15 22:32:12,626 - INFO - =====================PROGRAM START====================
+2023-11-15 22:32:12,626 - INFO - File EURAUD_trade_history_df.csv already exists. Skipping creation.
+2023-11-15 22:32:12,651 - INFO - last_trade_buy_status : open
+2023-11-15 22:32:12,651 - INFO - last_trade_sell_status : open
+2023-11-15 22:32:12,651 - INFO - True
+2023-11-15 22:32:12,651 - INFO - Already has opened order
+2023-11-15 22:32:12,685 - INFO - trade_current_direction: sell
+2023-11-15 22:32:12,685 - INFO - max_buy_direction_price: 1.66767
+2023-11-15 22:32:12,685 - INFO - max_sell_direction_price: 1.66763
+2023-11-15 22:32:12,686 - INFO - Current current_market_price: 1.66783 | next buy price: 1.66967 | next sell price: 1.66563
+2023-11-15 22:32:12,687 - INFO - Keep holding...
+2023-11-15 22:33:51,761 - INFO - =====================PROGRAM START====================
+2023-11-15 22:33:51,761 - INFO - File EURAUD_trade_history_df.csv already exists. Skipping creation.
+2023-11-15 22:33:51,777 - INFO - last_trade_buy_status : open
+2023-11-15 22:33:51,777 - INFO - last_trade_sell_status : open
+2023-11-15 22:33:51,777 - INFO - True
+2023-11-15 22:33:51,777 - INFO - Already has opened order
+2023-11-15 22:33:51,793 - INFO - trade_current_direction: sell
+2023-11-15 22:33:51,793 - INFO - max_buy_direction_price: 1.66767
+2023-11-15 22:33:51,793 - INFO - max_sell_direction_price: 1.66763
+2023-11-15 22:33:51,793 - INFO - Current current_market_price: 1.6677 | next buy price: 1.66967 | next sell price: 1.66563
+2023-11-15 22:33:51,793 - INFO - Keep holding...
+2023-11-15 22:48:51,813 - INFO - trade_current_direction: sell
+2023-11-15 22:48:51,814 - INFO - max_buy_direction_price: 1.66767
+2023-11-15 22:48:51,817 - INFO - max_sell_direction_price: 1.66763
+2023-11-15 22:48:51,817 - INFO - Current market buy price: 1.6662 < max sell price 1.66763
+2023-11-15 22:48:52,810 - INFO - Current current_market_price: 1.6662 | next buy price: 1.66967 | next sell price: 1.66563
+2023-11-15 22:48:52,810 - INFO - Keep holding...
+2023-11-15 22:52:39,287 - INFO - =====================PROGRAM START====================
+2023-11-15 22:52:39,288 - INFO - File EURAUD_trade_history_df.csv already exists. Skipping creation.
+2023-11-15 22:52:40,739 - INFO - last_trade_buy_status : open
+2023-11-15 22:52:40,740 - INFO - last_trade_sell_status : open
+2023-11-15 22:52:40,741 - INFO - True
+2023-11-15 22:52:40,741 - INFO - Already has opened order
+2023-11-15 22:52:42,095 - INFO - current_market_price <= next_sell_at
+2023-11-15 22:52:42,117 - INFO - 1
+                524937769
+                EURAUD
+                0.01
+                0
+                1.66763
+                0
+                1
+              
+2023-11-15 22:52:42,896 - INFO - Close last sell order: COMPLETED
+2023-11-15 22:52:42,930 - INFO - Account Balance: 6146.78
+2023-11-15 22:52:42,930 - INFO - Account Equity: 6127.35
+2023-11-15 22:52:42,930 - INFO - Account Margin: 5502.67
+2023-11-15 22:52:42,930 - INFO - Account Free Margin: 624.68
+2023-11-15 22:52:43,919 - INFO - order_result: OrderSendResult(retcode=10009, deal=382723417, order=524969330, volume=0.02, price=1.6655600000000002, bid=1.6655600000000002, ask=1.6656, comment='Request executed', request_id=2328103521, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.02, price=1.6655600000000002, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=1, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-15 22:54:25,334 - INFO - =====================PROGRAM START====================
+2023-11-15 22:54:25,334 - INFO - File EURAUD_trade_history_df.csv already exists. Skipping creation.
+2023-11-15 22:54:25,351 - INFO - last_trade_buy_status : open
+2023-11-15 22:54:25,351 - INFO - last_trade_sell_status : close
+2023-11-15 22:54:25,351 - INFO - True
+2023-11-15 22:54:25,351 - INFO - Already has opened order
+2023-11-15 22:54:25,367 - INFO - Market reverse 30% from sell direction to buy
+2023-11-15 22:54:30,047 - INFO - Close all of the orders: SUCCESSFULLY
+2023-11-15 22:54:30,047 - INFO - =====================Bot existing ...=====================
+2023-11-15 22:55:46,359 - INFO - =====================PROGRAM START====================
+2023-11-15 22:55:46,359 - INFO - File EURAUD_trade_history_df.csv already exists. Skipping creation.
+2023-11-15 22:55:46,375 - INFO - last_trade_buy_status : close
+2023-11-15 22:55:46,375 - INFO - last_trade_sell_status : close
+2023-11-15 22:55:46,375 - INFO - False
+2023-11-15 22:55:46,375 - INFO - Make first trade
+2023-11-15 22:55:46,375 - INFO - Account Balance: 6135.72
+2023-11-15 22:55:46,375 - INFO - Account Equity: 6126.93
+2023-11-15 22:55:46,375 - INFO - Account Margin: 2331.08
+2023-11-15 22:55:46,375 - INFO - Account Free Margin: 3795.85
+2023-11-15 22:55:46,375 - INFO - fib number :1
+2023-11-15 22:55:46,375 - INFO - Symbol Margin Required for 1 lot: 0.0
+2023-11-15 22:55:46,375 - INFO - File EURAUD_trade_history_df.csv already exists. Skipping creation.
+2023-11-15 22:55:48,106 - INFO - order_result: OrderSendResult(retcode=10009, deal=382727849, order=524974142, volume=0.01, price=1.66513, bid=1.66509, ask=1.66513, comment='Request executed', request_id=2328103528, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.01, price=1.66513, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=0, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-15 22:55:49,908 - INFO - order_result: OrderSendResult(retcode=10009, deal=382727891, order=524974184, volume=0.01, price=1.66502, bid=1.66502, ask=1.66505, comment='Request executed', request_id=2328103529, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.01, price=1.66509, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=1, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-15 22:55:53,864 - INFO - Data frame has been updated. File name: EURAUD_trade_history_df.csv
+2023-11-15 22:55:53,889 - INFO - trade_current_direction: nan
+2023-11-15 22:55:53,890 - INFO - max_buy_direction_price: 1.66513
+2023-11-15 22:55:53,890 - INFO - max_sell_direction_price: 1.66502
+2023-11-15 22:55:53,890 - INFO - Current current_market_price: 1.665 | next buy price: 1.66713 | next sell price: 1.66302
+2023-11-15 22:55:53,890 - INFO - Keep holding...
+2023-11-15 23:10:55,853 - INFO - trade_current_direction: nan
+2023-11-15 23:10:55,853 - INFO - max_buy_direction_price: 1.66513
+2023-11-15 23:10:55,853 - INFO - max_sell_direction_price: 1.66502
+2023-11-15 23:10:55,853 - INFO - Current current_market_price: 1.66448 | next buy price: 1.66713 | next sell price: 1.66302
+2023-11-15 23:10:55,853 - INFO - Keep holding...
+2023-11-15 23:25:55,864 - INFO - trade_current_direction: nan
+2023-11-15 23:25:55,864 - INFO - max_buy_direction_price: 1.66513
+2023-11-15 23:25:55,864 - INFO - max_sell_direction_price: 1.66502
+2023-11-15 23:25:55,864 - INFO - Current current_market_price: 1.66464 | next buy price: 1.66713 | next sell price: 1.66302
+2023-11-15 23:25:55,864 - INFO - Keep holding...
+2023-11-15 23:40:55,897 - INFO - trade_current_direction: nan
+2023-11-15 23:40:55,897 - INFO - max_buy_direction_price: 1.66513
+2023-11-15 23:40:55,897 - INFO - max_sell_direction_price: 1.66502
+2023-11-15 23:40:55,897 - INFO - Current current_market_price: 1.6654900000000001 | next buy price: 1.66713 | next sell price: 1.66302
+2023-11-15 23:40:55,903 - INFO - Keep holding...
+2023-11-15 23:55:55,911 - INFO - trade_current_direction: nan
+2023-11-15 23:55:55,926 - INFO - max_buy_direction_price: 1.66513
+2023-11-15 23:55:55,926 - INFO - max_sell_direction_price: 1.66502
+2023-11-15 23:55:55,926 - INFO - Current current_market_price: 1.6651799999999999 | next buy price: 1.66713 | next sell price: 1.66302
+2023-11-15 23:55:55,926 - INFO - Keep holding...
+2023-11-16 00:10:55,942 - INFO - trade_current_direction: nan
+2023-11-16 00:10:55,942 - INFO - max_buy_direction_price: 1.66513
+2023-11-16 00:10:55,942 - INFO - max_sell_direction_price: 1.66502
+2023-11-16 00:10:55,942 - INFO - Current current_market_price: 1.66487 | next buy price: 1.66713 | next sell price: 1.66302
+2023-11-16 00:10:55,942 - INFO - Keep holding...
+2023-11-16 00:25:55,961 - INFO - trade_current_direction: nan
+2023-11-16 00:25:55,961 - INFO - max_buy_direction_price: 1.66513
+2023-11-16 00:25:55,961 - INFO - max_sell_direction_price: 1.66502
+2023-11-16 00:25:55,961 - INFO - Current current_market_price: 1.66474 | next buy price: 1.66713 | next sell price: 1.66302
+2023-11-16 00:25:55,961 - INFO - Keep holding...
+2023-11-16 00:40:55,987 - INFO - trade_current_direction: nan
+2023-11-16 00:40:55,987 - INFO - max_buy_direction_price: 1.66513
+2023-11-16 00:40:55,987 - INFO - max_sell_direction_price: 1.66502
+2023-11-16 00:40:55,987 - INFO - Current current_market_price: 1.6643 | next buy price: 1.66713 | next sell price: 1.66302
+2023-11-16 00:40:55,987 - INFO - Keep holding...
+2023-11-16 00:55:56,007 - INFO - trade_current_direction: nan
+2023-11-16 00:55:56,007 - INFO - max_buy_direction_price: 1.66513
+2023-11-16 00:55:56,007 - INFO - max_sell_direction_price: 1.66502
+2023-11-16 00:55:56,007 - INFO - Current current_market_price: 1.66486 | next buy price: 1.66713 | next sell price: 1.66302
+2023-11-16 00:55:56,007 - INFO - Keep holding...
+2023-11-16 01:10:56,034 - INFO - trade_current_direction: nan
+2023-11-16 01:10:56,034 - INFO - max_buy_direction_price: 1.66513
+2023-11-16 01:10:56,034 - INFO - max_sell_direction_price: 1.66502
+2023-11-16 01:10:56,034 - INFO - Current current_market_price: 1.66525 | next buy price: 1.66713 | next sell price: 1.66302
+2023-11-16 01:10:56,034 - INFO - Keep holding...
+2023-11-16 01:25:56,045 - INFO - trade_current_direction: nan
+2023-11-16 01:25:56,045 - INFO - max_buy_direction_price: 1.66513
+2023-11-16 01:25:56,045 - INFO - max_sell_direction_price: 1.66502
+2023-11-16 01:25:56,045 - INFO - Current current_market_price: 1.6653 | next buy price: 1.66713 | next sell price: 1.66302
+2023-11-16 01:25:56,045 - INFO - Keep holding...
+2023-11-16 01:40:56,896 - INFO - trade_current_direction: nan
+2023-11-16 01:40:56,896 - INFO - max_buy_direction_price: 1.66513
+2023-11-16 01:40:56,896 - INFO - max_sell_direction_price: 1.66502
+2023-11-16 01:40:56,896 - INFO - Current current_market_price: 1.6654 | next buy price: 1.66713 | next sell price: 1.66302
+2023-11-16 01:40:56,896 - INFO - Keep holding...
+2023-11-16 01:55:56,907 - INFO - trade_current_direction: nan
+2023-11-16 01:55:56,907 - INFO - max_buy_direction_price: 1.66513
+2023-11-16 01:55:56,907 - INFO - max_sell_direction_price: 1.66502
+2023-11-16 01:55:56,907 - INFO - Current current_market_price: 1.66602 | next buy price: 1.66713 | next sell price: 1.66302
+2023-11-16 01:55:56,907 - INFO - Keep holding...
+2023-11-16 02:10:56,934 - INFO - trade_current_direction: nan
+2023-11-16 02:10:56,934 - INFO - max_buy_direction_price: 1.66513
+2023-11-16 02:10:56,934 - INFO - max_sell_direction_price: 1.66502
+2023-11-16 02:10:56,934 - INFO - Current current_market_price: 1.666 | next buy price: 1.66713 | next sell price: 1.66302
+2023-11-16 02:10:56,934 - INFO - Keep holding...
+2023-11-16 02:25:57,599 - INFO - trade_current_direction: nan
+2023-11-16 02:25:57,599 - INFO - max_buy_direction_price: 1.66513
+2023-11-16 02:25:57,599 - INFO - max_sell_direction_price: 1.66502
+2023-11-16 02:25:57,599 - INFO - Current current_market_price: 1.66656 | next buy price: 1.66713 | next sell price: 1.66302
+2023-11-16 02:25:57,599 - INFO - Keep holding...
+2023-11-16 02:40:57,617 - INFO - trade_current_direction: nan
+2023-11-16 02:40:57,617 - INFO - max_buy_direction_price: 1.66513
+2023-11-16 02:40:57,617 - INFO - max_sell_direction_price: 1.66502
+2023-11-16 02:40:57,617 - INFO - Current current_market_price: 1.66597 | next buy price: 1.66713 | next sell price: 1.66302
+2023-11-16 02:40:57,633 - INFO - Keep holding...
+2023-11-16 02:55:57,646 - INFO - trade_current_direction: nan
+2023-11-16 02:55:57,646 - INFO - max_buy_direction_price: 1.66513
+2023-11-16 02:55:57,646 - INFO - max_sell_direction_price: 1.66502
+2023-11-16 02:55:57,646 - INFO - Current current_market_price: 1.66604 | next buy price: 1.66713 | next sell price: 1.66302
+2023-11-16 02:55:57,646 - INFO - Keep holding...
+2023-11-16 03:10:57,659 - INFO - trade_current_direction: nan
+2023-11-16 03:10:57,659 - INFO - max_buy_direction_price: 1.66513
+2023-11-16 03:10:57,659 - INFO - max_sell_direction_price: 1.66502
+2023-11-16 03:10:57,659 - INFO - Current current_market_price: 1.6663299999999999 | next buy price: 1.66713 | next sell price: 1.66302
+2023-11-16 03:10:57,659 - INFO - Keep holding...
+2023-11-16 03:25:57,674 - INFO - trade_current_direction: nan
+2023-11-16 03:25:57,674 - INFO - max_buy_direction_price: 1.66513
+2023-11-16 03:25:57,674 - INFO - max_sell_direction_price: 1.66502
+2023-11-16 03:25:57,674 - INFO - Current current_market_price: 1.667 | next buy price: 1.66713 | next sell price: 1.66302
+2023-11-16 03:25:57,674 - INFO - Keep holding...
+2023-11-16 03:40:57,698 - INFO - trade_current_direction: nan
+2023-11-16 03:40:57,698 - INFO - max_buy_direction_price: 1.66513
+2023-11-16 03:40:57,698 - INFO - max_sell_direction_price: 1.66502
+2023-11-16 03:40:57,698 - INFO - Current current_market_price: 1.6665 | next buy price: 1.66713 | next sell price: 1.66302
+2023-11-16 03:40:57,698 - INFO - Keep holding...
+2023-11-16 03:55:57,716 - INFO - trade_current_direction: nan
+2023-11-16 03:55:57,716 - INFO - max_buy_direction_price: 1.66513
+2023-11-16 03:55:57,716 - INFO - max_sell_direction_price: 1.66502
+2023-11-16 03:55:57,716 - INFO - Current current_market_price: 1.66682 | next buy price: 1.66713 | next sell price: 1.66302
+2023-11-16 03:55:57,716 - INFO - Keep holding...
+2023-11-16 04:10:57,727 - INFO - trade_current_direction: nan
+2023-11-16 04:10:57,727 - INFO - max_buy_direction_price: 1.66513
+2023-11-16 04:10:57,727 - INFO - max_sell_direction_price: 1.66502
+2023-11-16 04:10:57,727 - INFO - Current current_market_price: 1.66645 | next buy price: 1.66713 | next sell price: 1.66302
+2023-11-16 04:10:57,727 - INFO - Keep holding...
+2023-11-16 04:25:57,750 - INFO - trade_current_direction: nan
+2023-11-16 04:25:57,750 - INFO - max_buy_direction_price: 1.66513
+2023-11-16 04:25:57,750 - INFO - max_sell_direction_price: 1.66502
+2023-11-16 04:25:57,750 - INFO - Current current_market_price: 1.66706 | next buy price: 1.66713 | next sell price: 1.66302
+2023-11-16 04:25:57,750 - INFO - Keep holding...
+2023-11-16 04:40:57,769 - INFO - trade_current_direction: nan
+2023-11-16 04:40:57,769 - INFO - max_buy_direction_price: 1.66513
+2023-11-16 04:40:57,769 - INFO - max_sell_direction_price: 1.66502
+2023-11-16 04:40:57,769 - INFO - Current current_market_price: 1.6663299999999999 | next buy price: 1.66713 | next sell price: 1.66302
+2023-11-16 04:40:57,769 - INFO - Keep holding...
+2023-11-16 04:55:57,783 - INFO - trade_current_direction: nan
+2023-11-16 04:55:57,783 - INFO - max_buy_direction_price: 1.66513
+2023-11-16 04:55:57,783 - INFO - max_sell_direction_price: 1.66502
+2023-11-16 04:55:57,783 - INFO - Current current_market_price: 1.66657 | next buy price: 1.66713 | next sell price: 1.66302
+2023-11-16 04:55:57,783 - INFO - Keep holding...
+2023-11-16 05:10:57,803 - INFO - current_market_price >= next_buy_at
+2023-11-16 05:10:57,803 - INFO - 1
+                524974142
+                EURAUD
+                0.01
+                1
+                1.66513
+                0
+                1
+              
+2023-11-16 05:10:58,569 - INFO - Close last buy order: COMPLETED
+2023-11-16 05:10:58,584 - INFO - Account Balance: 6129.48
+2023-11-16 05:10:58,584 - INFO - Account Equity: 6126.86
+2023-11-16 05:10:58,584 - INFO - Account Margin: 1086.26
+2023-11-16 05:10:58,584 - INFO - Account Free Margin: 5040.6
+2023-11-16 05:10:59,101 - INFO - order_result: OrderSendResult(retcode=10009, deal=382965290, order=525245727, volume=0.01, price=1.66846, bid=1.6667999999999998, ask=1.66846, comment='Request executed', request_id=2328103555, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.01, price=1.66846, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=0, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-16 05:10:59,649 - INFO - order_result: OrderSendResult(retcode=10009, deal=382965291, order=525245730, volume=0.01, price=1.6667999999999998, bid=1.6667999999999998, ask=1.66846, comment='Request executed', request_id=2328103556, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.01, price=1.6667999999999998, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=1, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-16 05:10:59,649 - INFO - Data frame has been updated. File name: EURAUD_trade_history_df.csv
+2023-11-16 05:10:59,649 - INFO - Make next buy and sell orders: COMPLETED
+2023-11-16 05:25:59,662 - INFO - Market reverse 30% from buy direction to sell
+2023-11-16 05:26:01,273 - INFO - Close all of the orders: SUCCESSFULLY
+2023-11-16 05:26:01,273 - INFO - =====================Bot existing ...=====================
+2023-11-16 09:26:50,053 - INFO - =====================PROGRAM START====================
+2023-11-16 09:26:50,053 - INFO - File EURAUD_trade_history_df.csv already exists. Skipping creation.
+2023-11-16 09:26:51,119 - INFO - last_trade_buy_status : close
+2023-11-16 09:26:51,119 - INFO - last_trade_sell_status : close
+2023-11-16 09:26:51,119 - INFO - False
+2023-11-16 09:26:51,119 - INFO - Make first trade
+2023-11-16 09:26:51,119 - INFO - Account Balance: 6125.41
+2023-11-16 09:26:51,119 - INFO - Account Equity: 6125.23
+2023-11-16 09:26:51,119 - INFO - Account Margin: 0.0
+2023-11-16 09:26:51,119 - INFO - Account Free Margin: 6125.23
+2023-11-16 09:26:51,119 - INFO - fib number :1
+2023-11-16 09:26:51,119 - INFO - Symbol Margin Required for 1 lot: 0.0
+2023-11-16 09:26:51,620 - INFO - File EURAUD_trade_history_df.csv already exists. Skipping creation.
+2023-11-16 09:26:53,232 - INFO - order_result: OrderSendResult(retcode=10009, deal=383047024, order=525345897, volume=0.01, price=1.67529, bid=1.67523, ask=1.67529, comment='Request executed', request_id=2328103565, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.01, price=1.6752799999999999, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=0, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-16 09:26:54,252 - INFO - order_result: OrderSendResult(retcode=10009, deal=383047027, order=525345902, volume=0.01, price=1.67523, bid=1.67523, ask=1.67527, comment='Request executed', request_id=2328103567, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.01, price=1.67524, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=1, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-16 09:26:55,432 - INFO - Data frame has been updated. File name: EURAUD_trade_history_df.csv
+2023-11-16 09:26:55,452 - INFO - trade_current_direction: nan
+2023-11-16 09:26:55,468 - INFO - max_buy_direction_price: 1.67529
+2023-11-16 09:26:55,468 - INFO - max_sell_direction_price: 1.67523
+2023-11-16 09:26:55,469 - INFO - Current current_market_price: 1.67531 | next buy price: 1.67729 | next sell price: 1.67323
+2023-11-16 09:26:55,469 - INFO - Keep holding...
+2023-11-16 09:41:55,480 - INFO - trade_current_direction: nan
+2023-11-16 09:41:55,480 - INFO - max_buy_direction_price: 1.67529
+2023-11-16 09:41:55,480 - INFO - max_sell_direction_price: 1.67523
+2023-11-16 09:41:55,480 - INFO - Current current_market_price: 1.67611 | next buy price: 1.67729 | next sell price: 1.67323
+2023-11-16 09:41:55,480 - INFO - Keep holding...
+2023-11-16 09:56:55,501 - INFO - trade_current_direction: nan
+2023-11-16 09:56:55,501 - INFO - max_buy_direction_price: 1.67529
+2023-11-16 09:56:55,501 - INFO - max_sell_direction_price: 1.67523
+2023-11-16 09:56:55,501 - INFO - Current current_market_price: 1.6761 | next buy price: 1.67729 | next sell price: 1.67323
+2023-11-16 09:56:55,501 - INFO - Keep holding...
+2023-11-16 10:11:55,540 - INFO - trade_current_direction: nan
+2023-11-16 10:11:55,540 - INFO - max_buy_direction_price: 1.67529
+2023-11-16 10:11:55,540 - INFO - max_sell_direction_price: 1.67523
+2023-11-16 10:11:55,540 - INFO - Current current_market_price: 1.67523 | next buy price: 1.67729 | next sell price: 1.67323
+2023-11-16 10:11:55,540 - INFO - Keep holding...
+2023-11-16 10:26:55,570 - INFO - trade_current_direction: nan
+2023-11-16 10:26:55,570 - INFO - max_buy_direction_price: 1.67529
+2023-11-16 10:26:55,570 - INFO - max_sell_direction_price: 1.67523
+2023-11-16 10:26:55,570 - INFO - Current current_market_price: 1.6746699999999999 | next buy price: 1.67729 | next sell price: 1.67323
+2023-11-16 10:26:55,570 - INFO - Keep holding...
+2023-11-16 10:41:55,612 - INFO - trade_current_direction: nan
+2023-11-16 10:41:55,612 - INFO - max_buy_direction_price: 1.67529
+2023-11-16 10:41:55,612 - INFO - max_sell_direction_price: 1.67523
+2023-11-16 10:41:55,612 - INFO - Current current_market_price: 1.6741899999999998 | next buy price: 1.67729 | next sell price: 1.67323
+2023-11-16 10:41:55,612 - INFO - Keep holding...
+2023-11-16 10:56:55,638 - INFO - trade_current_direction: nan
+2023-11-16 10:56:55,638 - INFO - max_buy_direction_price: 1.67529
+2023-11-16 10:56:55,638 - INFO - max_sell_direction_price: 1.67523
+2023-11-16 10:56:55,638 - INFO - Current current_market_price: 1.67489 | next buy price: 1.67729 | next sell price: 1.67323
+2023-11-16 10:56:55,638 - INFO - Keep holding...
+2023-11-16 11:11:55,655 - INFO - trade_current_direction: nan
+2023-11-16 11:11:55,655 - INFO - max_buy_direction_price: 1.67529
+2023-11-16 11:11:55,655 - INFO - max_sell_direction_price: 1.67523
+2023-11-16 11:11:55,655 - INFO - Current current_market_price: 1.67561 | next buy price: 1.67729 | next sell price: 1.67323
+2023-11-16 11:11:55,655 - INFO - Keep holding...
+2023-11-16 11:26:55,691 - INFO - trade_current_direction: nan
+2023-11-16 11:26:55,691 - INFO - max_buy_direction_price: 1.67529
+2023-11-16 11:26:55,691 - INFO - max_sell_direction_price: 1.67523
+2023-11-16 11:26:55,691 - INFO - Current current_market_price: 1.6744400000000002 | next buy price: 1.67729 | next sell price: 1.67323
+2023-11-16 11:26:55,706 - INFO - Keep holding...
+2023-11-16 11:41:55,718 - INFO - trade_current_direction: nan
+2023-11-16 11:41:55,718 - INFO - max_buy_direction_price: 1.67529
+2023-11-16 11:41:55,718 - INFO - max_sell_direction_price: 1.67523
+2023-11-16 11:41:55,718 - INFO - Current current_market_price: 1.67489 | next buy price: 1.67729 | next sell price: 1.67323
+2023-11-16 11:41:55,718 - INFO - Keep holding...
+2023-11-16 11:56:55,759 - INFO - trade_current_direction: nan
+2023-11-16 11:56:55,759 - INFO - max_buy_direction_price: 1.67529
+2023-11-16 11:56:55,759 - INFO - max_sell_direction_price: 1.67523
+2023-11-16 11:56:55,759 - INFO - Current current_market_price: 1.67543 | next buy price: 1.67729 | next sell price: 1.67323
+2023-11-16 11:56:55,759 - INFO - Keep holding...
+2023-11-16 12:11:55,777 - INFO - trade_current_direction: nan
+2023-11-16 12:11:55,777 - INFO - max_buy_direction_price: 1.67529
+2023-11-16 12:11:55,777 - INFO - max_sell_direction_price: 1.67523
+2023-11-16 12:11:55,777 - INFO - Current current_market_price: 1.67509 | next buy price: 1.67729 | next sell price: 1.67323
+2023-11-16 12:11:55,777 - INFO - Keep holding...
+2023-11-16 12:26:55,798 - INFO - trade_current_direction: nan
+2023-11-16 12:26:55,798 - INFO - max_buy_direction_price: 1.67529
+2023-11-16 12:26:55,798 - INFO - max_sell_direction_price: 1.67523
+2023-11-16 12:26:55,813 - INFO - Current current_market_price: 1.67455 | next buy price: 1.67729 | next sell price: 1.67323
+2023-11-16 12:26:55,813 - INFO - Keep holding...
+2023-11-16 12:41:55,842 - INFO - trade_current_direction: nan
+2023-11-16 12:41:55,842 - INFO - max_buy_direction_price: 1.67529
+2023-11-16 12:41:55,842 - INFO - max_sell_direction_price: 1.67523
+2023-11-16 12:41:55,842 - INFO - Current current_market_price: 1.6745 | next buy price: 1.67729 | next sell price: 1.67323
+2023-11-16 12:41:55,842 - INFO - Keep holding...
+2023-11-16 12:56:55,872 - INFO - trade_current_direction: nan
+2023-11-16 12:56:55,882 - INFO - max_buy_direction_price: 1.67529
+2023-11-16 12:56:55,882 - INFO - max_sell_direction_price: 1.67523
+2023-11-16 12:56:55,882 - INFO - Current current_market_price: 1.67378 | next buy price: 1.67729 | next sell price: 1.67323
+2023-11-16 12:56:55,882 - INFO - Keep holding...
+2023-11-16 13:11:55,906 - INFO - current_market_price <= next_sell_at
+2023-11-16 13:11:55,906 - INFO - 1
+                525345902
+                EURAUD
+                0.01
+                0
+                1.67523
+                0
+                1
+              
+2023-11-16 13:11:56,579 - INFO - Close last sell order: COMPLETED
+2023-11-16 13:11:56,594 - INFO - Account Balance: 6126.05
+2023-11-16 13:11:56,594 - INFO - Account Equity: 6124.53
+2023-11-16 13:11:56,594 - INFO - Account Margin: 1084.02
+2023-11-16 13:11:56,594 - INFO - Account Free Margin: 5040.51
+2023-11-16 13:11:57,268 - INFO - order_result: OrderSendResult(retcode=10009, deal=383105684, order=525423497, volume=0.01, price=1.67306, bid=1.67301, ask=1.67306, comment='Request executed', request_id=2328103577, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.01, price=1.67306, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=0, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-16 13:11:57,940 - INFO - order_result: OrderSendResult(retcode=10009, deal=383105686, order=525423504, volume=0.01, price=1.67301, bid=1.67301, ask=1.67306, comment='Request executed', request_id=2328103578, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.01, price=1.67301, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=1, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-16 13:11:57,956 - INFO - Data frame has been updated. File name: EURAUD_trade_history_df.csv
+2023-11-16 13:11:57,956 - INFO - Make next buy and sell orders: COMPLETED
+2023-11-16 13:26:57,968 - INFO - trade_current_direction: sell
+2023-11-16 13:26:57,968 - INFO - max_buy_direction_price: 1.67306
+2023-11-16 13:26:57,968 - INFO - max_sell_direction_price: 1.67301
+2023-11-16 13:26:57,968 - INFO - Current market buy price: 1.6727699999999999 < max sell price 1.67301
+2023-11-16 13:26:57,984 - INFO - Current current_market_price: 1.6727699999999999 | next buy price: 1.67506 | next sell price: 1.67101
+2023-11-16 13:26:57,984 - INFO - Keep holding...
+2023-11-16 13:41:58,016 - INFO - trade_current_direction: sell
+2023-11-16 13:41:58,016 - INFO - max_buy_direction_price: 1.67306
+2023-11-16 13:41:58,016 - INFO - max_sell_direction_price: 1.67277
+2023-11-16 13:41:58,016 - INFO - Current market buy price: 1.67235 < max sell price 1.67277
+2023-11-16 13:41:58,016 - INFO - Current current_market_price: 1.67235 | next buy price: 1.67506 | next sell price: 1.67101
+2023-11-16 13:41:58,016 - INFO - Keep holding...
+2023-11-16 13:56:58,042 - INFO - Market reverse 30% from sell direction to buy
+2023-11-16 13:57:00,232 - INFO - Close all of the orders: SUCCESSFULLY
+2023-11-16 13:57:00,232 - INFO - =====================Bot existing ...=====================
+2023-11-16 22:31:56,210 - INFO - =====================PROGRAM START====================
+2023-11-16 22:31:56,210 - INFO - File EURAUD_trade_history_df.csv already exists. Skipping creation.
+2023-11-16 22:31:57,353 - INFO - last_trade_buy_status : close
+2023-11-16 22:31:57,356 - INFO - last_trade_sell_status : close
+2023-11-16 22:31:57,356 - INFO - False
+2023-11-16 22:31:57,356 - INFO - Make first trade
+2023-11-16 22:31:57,357 - INFO - Account Balance: 6125.14
+2023-11-16 22:31:57,357 - INFO - Account Equity: 6122.05
+2023-11-16 22:31:57,357 - INFO - Account Margin: 1000.0
+2023-11-16 22:31:57,357 - INFO - Account Free Margin: 5122.05
+2023-11-16 22:31:57,358 - INFO - fib number :1
+2023-11-16 22:31:57,358 - INFO - Symbol Margin Required for 1 lot: 0.0
+2023-11-16 22:31:57,361 - INFO - File EURAUD_trade_history_df.csv already exists. Skipping creation.
+2023-11-16 22:31:59,028 - INFO - order_result: OrderSendResult(retcode=10009, deal=383531017, order=525915644, volume=0.01, price=1.67673, bid=1.67671, ask=1.67673, comment='Request executed', request_id=2328103599, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.01, price=1.6766299999999998, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=0, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-16 22:31:59,606 - INFO - order_result: OrderSendResult(retcode=10009, deal=383531044, order=525915670, volume=0.01, price=1.6767699999999999, bid=1.6767699999999999, ask=1.6767699999999999, comment='Request executed', request_id=2328103602, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.01, price=1.67676, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=1, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-16 22:32:00,793 - INFO - Data frame has been updated. File name: EURAUD_trade_history_df.csv
+2023-11-16 22:32:01,371 - INFO - trade_current_direction: nan
+2023-11-16 22:32:01,371 - INFO - max_buy_direction_price: 1.67673
+2023-11-16 22:32:01,371 - INFO - max_sell_direction_price: 1.67677
+2023-11-16 22:32:01,371 - INFO - Current current_market_price: 1.67678 | next buy price: 1.67873 | next sell price: 1.67477
+2023-11-16 22:32:01,371 - INFO - Keep holding...
+2023-11-16 22:47:01,387 - INFO - trade_current_direction: nan
+2023-11-16 22:47:01,387 - INFO - max_buy_direction_price: 1.67673
+2023-11-16 22:47:01,387 - INFO - max_sell_direction_price: 1.67677
+2023-11-16 22:47:01,387 - INFO - Current current_market_price: 1.67815 | next buy price: 1.67873 | next sell price: 1.67477
+2023-11-16 22:47:01,387 - INFO - Keep holding...
+2023-11-16 23:02:01,397 - INFO - trade_current_direction: nan
+2023-11-16 23:02:01,397 - INFO - max_buy_direction_price: 1.67673
+2023-11-16 23:02:01,397 - INFO - max_sell_direction_price: 1.67677
+2023-11-16 23:02:01,397 - INFO - Current current_market_price: 1.67767 | next buy price: 1.67873 | next sell price: 1.67477
+2023-11-16 23:02:01,397 - INFO - Keep holding...
+2023-11-16 23:17:01,405 - INFO - trade_current_direction: nan
+2023-11-16 23:17:01,405 - INFO - max_buy_direction_price: 1.67673
+2023-11-16 23:17:01,405 - INFO - max_sell_direction_price: 1.67677
+2023-11-16 23:17:01,405 - INFO - Current current_market_price: 1.6778300000000002 | next buy price: 1.67873 | next sell price: 1.67477
+2023-11-16 23:17:01,405 - INFO - Keep holding...
+2023-11-16 23:32:01,410 - INFO - current_market_price >= next_buy_at
+2023-11-16 23:32:01,410 - INFO - 1
+                525915644
+                EURAUD
+                0.01
+                1
+                1.67673
+                0
+                1
+              
+2023-11-16 23:32:01,957 - INFO - Close last buy order: COMPLETED
+2023-11-16 23:32:02,503 - INFO - Account Balance: 6129.06
+2023-11-16 23:32:02,503 - INFO - Account Equity: 6118.53
+2023-11-16 23:32:02,503 - INFO - Account Margin: 4421.98
+2023-11-16 23:32:02,503 - INFO - Account Free Margin: 1696.55
+2023-11-16 23:32:03,035 - INFO - order_result: OrderSendResult(retcode=10009, deal=383596928, order=525986886, volume=0.01, price=1.67924, bid=1.67919, ask=1.67924, comment='Request executed', request_id=2328103616, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.01, price=1.67923, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=0, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-16 23:32:03,800 - INFO - order_result: OrderSendResult(retcode=10009, deal=383596953, order=525986915, volume=0.01, price=1.67919, bid=1.67919, ask=1.6792500000000001, comment='Request executed', request_id=2328103617, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.01, price=1.67919, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=1, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-16 23:32:03,816 - INFO - Data frame has been updated. File name: EURAUD_trade_history_df.csv
+2023-11-16 23:32:03,816 - INFO - Make next buy and sell orders: COMPLETED
+2023-11-16 23:47:03,823 - INFO - trade_current_direction: buy
+2023-11-16 23:47:03,823 - INFO - max_buy_direction_price: 1.67924
+2023-11-16 23:47:03,823 - INFO - max_sell_direction_price: 1.67919
+2023-11-16 23:47:03,823 - INFO - Current current_market_price: 1.6782599999999999 | next buy price: 1.68124 | next sell price: 1.67719
+2023-11-16 23:47:03,823 - INFO - Keep holding...
+2023-11-17 00:02:03,839 - INFO - trade_current_direction: buy
+2023-11-17 00:02:03,839 - INFO - max_buy_direction_price: 1.67924
+2023-11-17 00:02:03,839 - INFO - max_sell_direction_price: 1.67919
+2023-11-17 00:02:03,839 - INFO - Current current_market_price: 1.67866 | next buy price: 1.68124 | next sell price: 1.67719
+2023-11-17 00:02:03,839 - INFO - Keep holding...
+2023-11-17 00:17:03,846 - INFO - trade_current_direction: buy
+2023-11-17 00:17:03,846 - INFO - max_buy_direction_price: 1.67924
+2023-11-17 00:17:03,846 - INFO - max_sell_direction_price: 1.67919
+2023-11-17 00:17:03,846 - INFO - Current current_market_price: 1.6775799999999998 | next buy price: 1.68124 | next sell price: 1.67719
+2023-11-17 00:17:03,846 - INFO - Keep holding...
+2023-11-17 00:32:03,852 - INFO - trade_current_direction: buy
+2023-11-17 00:32:03,852 - INFO - max_buy_direction_price: 1.67924
+2023-11-17 00:32:03,852 - INFO - max_sell_direction_price: 1.67919
+2023-11-17 00:32:03,852 - INFO - Current current_market_price: 1.67767 | next buy price: 1.68124 | next sell price: 1.67719
+2023-11-17 00:32:03,852 - INFO - Keep holding...
+2023-11-17 00:47:03,870 - INFO - Market reverse 30% from buy direction to sell
+2023-11-17 00:47:05,510 - INFO - Close all of the orders: SUCCESSFULLY
+2023-11-17 00:47:05,510 - INFO - =====================Bot existing ...=====================
+2023-11-17 09:41:54,543 - INFO - =====================PROGRAM START====================
+2023-11-17 09:41:54,543 - INFO - File EURAUD_trade_history_df.csv already exists. Skipping creation.
+2023-11-17 09:41:54,558 - INFO - last_trade_buy_status : close
+2023-11-17 09:41:54,558 - INFO - last_trade_sell_status : close
+2023-11-17 09:41:54,558 - INFO - False
+2023-11-17 09:41:54,558 - INFO - Make first trade
+2023-11-17 09:41:54,558 - INFO - Account Balance: 6125.24
+2023-11-17 09:41:54,558 - INFO - Account Equity: 6118.65
+2023-11-17 09:41:54,558 - INFO - Account Margin: 0.0
+2023-11-17 09:41:54,558 - INFO - Account Free Margin: 6118.65
+2023-11-17 09:41:54,558 - INFO - fib number :1
+2023-11-17 09:41:54,558 - INFO - Symbol Margin Required for 1 lot: 0.0
+2023-11-17 09:41:54,558 - INFO - File EURAUD_trade_history_df.csv already exists. Skipping creation.
+2023-11-17 09:41:56,496 - INFO - order_result: OrderSendResult(retcode=10009, deal=383822282, order=526258882, volume=0.01, price=1.67973, bid=1.67967, ask=1.67973, comment='Request executed', request_id=4041985410, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.01, price=1.67973, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=0, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-17 09:42:01,552 - INFO - order_result: OrderSendResult(retcode=10009, deal=383822284, order=526258884, volume=0.01, price=1.67967, bid=1.67967, ask=1.67972, comment='Request executed', request_id=4041985411, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.01, price=1.67967, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=1, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-17 09:42:02,989 - INFO - Data frame has been updated. File name: EURAUD_trade_history_df.csv
+2023-11-17 09:42:04,347 - INFO - trade_current_direction: nan
+2023-11-17 09:42:04,347 - INFO - max_buy_direction_price: 1.67973
+2023-11-17 09:42:04,347 - INFO - max_sell_direction_price: 1.67967
+2023-11-17 09:42:04,347 - INFO - Current current_market_price: 1.67977 | next buy price: 1.68173 | next sell price: 1.67767
+2023-11-17 09:42:04,347 - INFO - Keep holding...
+2023-11-17 09:57:04,382 - INFO - trade_current_direction: nan
+2023-11-17 09:57:04,382 - INFO - max_buy_direction_price: 1.67973
+2023-11-17 09:57:04,382 - INFO - max_sell_direction_price: 1.67967
+2023-11-17 09:57:04,382 - INFO - Current current_market_price: 1.67956 | next buy price: 1.68173 | next sell price: 1.67767
+2023-11-17 09:57:04,382 - INFO - Keep holding...
+2023-11-17 10:12:04,397 - INFO - trade_current_direction: nan
+2023-11-17 10:12:04,397 - INFO - max_buy_direction_price: 1.67973
+2023-11-17 10:12:04,397 - INFO - max_sell_direction_price: 1.67967
+2023-11-17 10:12:04,397 - INFO - Current current_market_price: 1.67951 | next buy price: 1.68173 | next sell price: 1.67767
+2023-11-17 10:12:04,397 - INFO - Keep holding...
+2023-11-17 10:27:04,438 - INFO - trade_current_direction: nan
+2023-11-17 10:27:04,438 - INFO - max_buy_direction_price: 1.67973
+2023-11-17 10:27:04,438 - INFO - max_sell_direction_price: 1.67967
+2023-11-17 10:27:04,438 - INFO - Current current_market_price: 1.67906 | next buy price: 1.68173 | next sell price: 1.67767
+2023-11-17 10:27:04,438 - INFO - Keep holding...
+2023-11-17 10:42:04,469 - INFO - trade_current_direction: nan
+2023-11-17 10:42:04,469 - INFO - max_buy_direction_price: 1.67973
+2023-11-17 10:42:04,469 - INFO - max_sell_direction_price: 1.67967
+2023-11-17 10:42:04,469 - INFO - Current current_market_price: 1.67862 | next buy price: 1.68173 | next sell price: 1.67767
+2023-11-17 10:42:04,469 - INFO - Keep holding...
+2023-11-17 10:57:04,491 - INFO - trade_current_direction: nan
+2023-11-17 10:57:04,491 - INFO - max_buy_direction_price: 1.67973
+2023-11-17 10:57:04,491 - INFO - max_sell_direction_price: 1.67967
+2023-11-17 10:57:04,491 - INFO - Current current_market_price: 1.67855 | next buy price: 1.68173 | next sell price: 1.67767
+2023-11-17 10:57:04,491 - INFO - Keep holding...
+2023-11-17 11:12:04,524 - INFO - trade_current_direction: nan
+2023-11-17 11:12:04,524 - INFO - max_buy_direction_price: 1.67973
+2023-11-17 11:12:04,524 - INFO - max_sell_direction_price: 1.67967
+2023-11-17 11:12:04,524 - INFO - Current current_market_price: 1.67777 | next buy price: 1.68173 | next sell price: 1.67767
+2023-11-17 11:12:04,524 - INFO - Keep holding...
+2023-11-17 11:27:04,535 - INFO - trade_current_direction: nan
+2023-11-17 11:27:04,535 - INFO - max_buy_direction_price: 1.67973
+2023-11-17 11:27:04,535 - INFO - max_sell_direction_price: 1.67967
+2023-11-17 11:27:04,535 - INFO - Current current_market_price: 1.6783299999999999 | next buy price: 1.68173 | next sell price: 1.67767
+2023-11-17 11:27:04,535 - INFO - Keep holding...
+2023-11-17 11:42:04,564 - INFO - trade_current_direction: nan
+2023-11-17 11:42:04,564 - INFO - max_buy_direction_price: 1.67973
+2023-11-17 11:42:04,564 - INFO - max_sell_direction_price: 1.67967
+2023-11-17 11:42:04,564 - INFO - Current current_market_price: 1.67814 | next buy price: 1.68173 | next sell price: 1.67767
+2023-11-17 11:42:04,564 - INFO - Keep holding...
+2023-11-17 11:57:04,592 - INFO - current_market_price <= next_sell_at
+2023-11-17 11:57:04,596 - INFO - 1
+                526258884
+                EURAUD
+                0.01
+                0
+                1.67967
+                0
+                1
+              
+2023-11-17 11:57:05,160 - INFO - Close last sell order: COMPLETED
+2023-11-17 11:57:05,181 - INFO - Account Balance: 6126.1
+2023-11-17 11:57:05,181 - INFO - Account Equity: 6117.97
+2023-11-17 11:57:05,181 - INFO - Account Margin: 1085.0
+2023-11-17 11:57:05,181 - INFO - Account Free Margin: 5032.97
+2023-11-17 11:57:05,725 - INFO - order_result: OrderSendResult(retcode=10009, deal=383849356, order=526293795, volume=0.01, price=1.6775799999999998, bid=1.67752, ask=1.6775799999999998, comment='Request executed', request_id=4041985420, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.01, price=1.67757, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=0, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-17 11:57:06,254 - INFO - order_result: OrderSendResult(retcode=10009, deal=383849358, order=526293797, volume=0.01, price=1.67752, bid=1.67752, ask=1.6775799999999998, comment='Request executed', request_id=4041985421, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.01, price=1.67752, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=1, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-17 11:57:06,270 - INFO - Data frame has been updated. File name: EURAUD_trade_history_df.csv
+2023-11-17 11:57:06,270 - INFO - Make next buy and sell orders: COMPLETED
+2023-11-17 12:12:06,300 - INFO - Market reverse 30% from sell direction to buy
+2023-11-17 12:12:07,934 - INFO - Close all of the orders: SUCCESSFULLY
+2023-11-17 12:12:07,934 - INFO - =====================Bot existing ...=====================
+2023-11-17 18:59:13,415 - INFO - =====================PROGRAM START====================
+2023-11-17 18:59:13,415 - INFO - File EURAUD_trade_history_df.csv already exists. Skipping creation.
+2023-11-17 18:59:13,431 - INFO - last_trade_buy_status : close
+2023-11-17 18:59:13,431 - INFO - last_trade_sell_status : close
+2023-11-17 18:59:13,431 - INFO - False
+2023-11-17 18:59:13,431 - INFO - Make first trade
+2023-11-17 18:59:13,431 - INFO - Account Balance: 6116.68
+2023-11-17 18:59:13,431 - INFO - Account Equity: 6116.68
+2023-11-17 18:59:13,431 - INFO - Account Margin: 0.0
+2023-11-17 18:59:13,431 - INFO - Account Free Margin: 6116.68
+2023-11-17 18:59:13,431 - INFO - fib number :1
+2023-11-17 18:59:13,431 - INFO - Symbol Margin Required for 1 lot: 0.0
+2023-11-17 18:59:14,106 - INFO - File EURAUD_trade_history_df.csv already exists. Skipping creation.
+2023-11-17 18:59:15,536 - INFO - order_result: OrderSendResult(retcode=10009, deal=384126787, order=526603816, volume=0.03, price=1.67181, bid=1.67171, ask=1.67181, comment='Request executed', request_id=4041985453, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.03, price=1.67181, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=0, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-17 18:59:16,177 - INFO - order_result: OrderSendResult(retcode=10009, deal=384126793, order=526603821, volume=0.03, price=1.67171, bid=1.67171, ask=1.67181, comment='Request executed', request_id=4041985454, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.03, price=1.67171, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=1, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-17 18:59:21,496 - INFO - Data frame has been updated. File name: EURAUD_trade_history_df.csv
+2023-11-17 18:59:21,528 - INFO - trade_current_direction: nan
+2023-11-17 18:59:21,528 - INFO - max_buy_direction_price: 1.67181
+2023-11-17 18:59:21,528 - INFO - max_sell_direction_price: 1.67171
+2023-11-17 18:59:21,543 - INFO - Current current_market_price: 1.67181 | next buy price: 1.67531 | next sell price: 1.66821
+2023-11-17 18:59:21,543 - INFO - Keep holding...
+2023-11-17 19:00:59,135 - INFO - =====================PROGRAM START====================
+2023-11-17 19:00:59,135 - INFO - File EURAUD_trade_history_df.csv already exists. Skipping creation.
+2023-11-17 19:00:59,151 - INFO - last_trade_buy_status : open
+2023-11-17 19:00:59,151 - INFO - last_trade_sell_status : open
+2023-11-17 19:00:59,151 - INFO - True
+2023-11-17 19:00:59,151 - INFO - Already has opened order
+2023-11-17 19:00:59,168 - INFO - trade_current_direction: nan
+2023-11-17 19:00:59,169 - INFO - max_buy_direction_price: 1.67181
+2023-11-17 19:00:59,170 - INFO - max_sell_direction_price: 1.67171
+2023-11-17 19:00:59,172 - INFO - Current current_market_price: 1.67179 | next buy price: 1.67531 | next sell price: 1.66821
+2023-11-17 19:00:59,172 - INFO - Keep holding...
+2023-11-17 19:30:59,176 - INFO - trade_current_direction: nan
+2023-11-17 19:30:59,176 - INFO - max_buy_direction_price: 1.67181
+2023-11-17 19:30:59,176 - INFO - max_sell_direction_price: 1.67171
+2023-11-17 19:30:59,176 - INFO - Current current_market_price: 1.6715499999999999 | next buy price: 1.67531 | next sell price: 1.66821
+2023-11-17 19:30:59,176 - INFO - Keep holding...
+2023-11-17 20:00:59,188 - INFO - trade_current_direction: nan
+2023-11-17 20:00:59,188 - INFO - max_buy_direction_price: 1.67181
+2023-11-17 20:00:59,188 - INFO - max_sell_direction_price: 1.67171
+2023-11-17 20:00:59,188 - INFO - Current current_market_price: 1.6713 | next buy price: 1.67531 | next sell price: 1.66821
+2023-11-17 20:00:59,188 - INFO - Keep holding...
+2023-11-17 20:30:59,203 - INFO - trade_current_direction: nan
+2023-11-17 20:30:59,203 - INFO - max_buy_direction_price: 1.67181
+2023-11-17 20:30:59,203 - INFO - max_sell_direction_price: 1.67171
+2023-11-17 20:30:59,203 - INFO - Current current_market_price: 1.67136 | next buy price: 1.67531 | next sell price: 1.66821
+2023-11-17 20:30:59,203 - INFO - Keep holding...
+2023-11-17 21:00:59,228 - INFO - trade_current_direction: nan
+2023-11-17 21:00:59,228 - INFO - max_buy_direction_price: 1.67181
+2023-11-17 21:00:59,228 - INFO - max_sell_direction_price: 1.67171
+2023-11-17 21:00:59,228 - INFO - Current current_market_price: 1.6726 | next buy price: 1.67531 | next sell price: 1.66821
+2023-11-17 21:00:59,228 - INFO - Keep holding...
+2023-11-17 21:30:59,231 - INFO - trade_current_direction: nan
+2023-11-17 21:30:59,231 - INFO - max_buy_direction_price: 1.67181
+2023-11-17 21:30:59,231 - INFO - max_sell_direction_price: 1.67171
+2023-11-17 21:30:59,231 - INFO - Current current_market_price: 1.67279 | next buy price: 1.67531 | next sell price: 1.66821
+2023-11-17 21:30:59,231 - INFO - Keep holding...
+2023-11-17 22:00:59,253 - INFO - trade_current_direction: nan
+2023-11-17 22:00:59,253 - INFO - max_buy_direction_price: 1.67181
+2023-11-17 22:00:59,253 - INFO - max_sell_direction_price: 1.67171
+2023-11-17 22:00:59,253 - INFO - Current current_market_price: 1.67428 | next buy price: 1.67531 | next sell price: 1.66821
+2023-11-17 22:00:59,253 - INFO - Keep holding...
+2023-11-17 22:30:59,273 - INFO - trade_current_direction: nan
+2023-11-17 22:30:59,273 - INFO - max_buy_direction_price: 1.67181
+2023-11-17 22:30:59,273 - INFO - max_sell_direction_price: 1.67171
+2023-11-17 22:30:59,273 - INFO - Current current_market_price: 1.67416 | next buy price: 1.67531 | next sell price: 1.66821
+2023-11-17 22:30:59,273 - INFO - Keep holding...
+2023-11-17 23:00:59,287 - INFO - trade_current_direction: nan
+2023-11-17 23:00:59,287 - INFO - max_buy_direction_price: 1.67181
+2023-11-17 23:00:59,287 - INFO - max_sell_direction_price: 1.67171
+2023-11-17 23:00:59,287 - INFO - Current current_market_price: 1.67458 | next buy price: 1.67531 | next sell price: 1.66821
+2023-11-17 23:00:59,287 - INFO - Keep holding...
+2023-11-17 23:30:59,291 - INFO - current_market_price >= next_buy_at
+2023-11-17 23:30:59,307 - INFO - 1
+                526603816
+                EURAUD
+                0.03
+                1
+                1.67181
+                0
+                1
+              
+2023-11-17 23:30:59,999 - INFO - Close last buy order: COMPLETED
+2023-11-17 23:30:59,999 - INFO - Account Balance: 6122.64
+2023-11-17 23:30:59,999 - INFO - Account Equity: 6115.22
+2023-11-17 23:30:59,999 - INFO - Account Margin: 3259.77
+2023-11-17 23:30:59,999 - INFO - Account Free Margin: 2855.45
+2023-11-17 23:31:00,940 - INFO - order_result: OrderSendResult(retcode=10009, deal=384351799, order=526855048, volume=0.03, price=1.6754799999999999, bid=1.67542, ask=1.6754799999999999, comment='Request executed', request_id=4041985464, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.03, price=1.6754799999999999, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=0, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-17 23:31:01,631 - INFO - order_result: OrderSendResult(retcode=10009, deal=384351806, order=526855060, volume=0.03, price=1.6754, bid=1.6754, ask=1.67546, comment='Request executed', request_id=4041985465, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.03, price=1.6754099999999998, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=1, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-17 23:31:01,646 - INFO - Data frame has been updated. File name: EURAUD_trade_history_df.csv
+2023-11-17 23:31:01,646 - INFO - Make next buy and sell orders: COMPLETED
+2023-11-18 00:01:01,653 - INFO - trade_current_direction: buy
+2023-11-18 00:01:01,653 - INFO - max_buy_direction_price: 1.67548
+2023-11-18 00:01:01,653 - INFO - max_sell_direction_price: 1.6754
+2023-11-18 00:01:01,653 - INFO - Current current_market_price: 1.67523 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-18 00:01:01,653 - INFO - Keep holding...
+2023-11-18 19:19:11,833 - INFO - =====================PROGRAM START====================
+2023-11-18 19:19:11,833 - INFO - File EURAUD_trade_history_df.csv already exists. Skipping creation.
+2023-11-18 19:19:11,864 - INFO - last_trade_buy_status : open
+2023-11-18 19:19:11,864 - INFO - last_trade_sell_status : open
+2023-11-18 19:19:11,864 - INFO - True
+2023-11-18 19:19:11,864 - INFO - Already has opened order
+2023-11-18 19:19:11,894 - INFO - trade_current_direction: buy
+2023-11-18 19:19:11,896 - INFO - max_buy_direction_price: 1.67548
+2023-11-18 19:19:11,896 - INFO - max_sell_direction_price: 1.6754
+2023-11-18 19:19:11,897 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-18 19:19:11,897 - INFO - Keep holding...
+2023-11-18 19:49:11,911 - INFO - trade_current_direction: buy
+2023-11-18 19:49:11,911 - INFO - max_buy_direction_price: 1.67548
+2023-11-18 19:49:11,911 - INFO - max_sell_direction_price: 1.6754
+2023-11-18 19:49:11,911 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-18 19:49:11,911 - INFO - Keep holding...
+2023-11-18 20:19:11,921 - INFO - trade_current_direction: buy
+2023-11-18 20:19:11,921 - INFO - max_buy_direction_price: 1.67548
+2023-11-18 20:19:11,921 - INFO - max_sell_direction_price: 1.6754
+2023-11-18 20:19:11,921 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-18 20:19:11,921 - INFO - Keep holding...
+2023-11-18 20:49:11,933 - INFO - trade_current_direction: buy
+2023-11-18 20:49:11,933 - INFO - max_buy_direction_price: 1.67548
+2023-11-18 20:49:11,933 - INFO - max_sell_direction_price: 1.6754
+2023-11-18 20:49:11,933 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-18 20:49:11,933 - INFO - Keep holding...
+2023-11-18 21:19:11,946 - INFO - trade_current_direction: buy
+2023-11-18 21:19:11,946 - INFO - max_buy_direction_price: 1.67548
+2023-11-18 21:19:11,946 - INFO - max_sell_direction_price: 1.6754
+2023-11-18 21:19:11,946 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-18 21:19:11,946 - INFO - Keep holding...
+2023-11-18 21:49:11,961 - INFO - trade_current_direction: buy
+2023-11-18 21:49:11,961 - INFO - max_buy_direction_price: 1.67548
+2023-11-18 21:49:11,961 - INFO - max_sell_direction_price: 1.6754
+2023-11-18 21:49:11,961 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-18 21:49:11,961 - INFO - Keep holding...
+2023-11-18 22:19:11,982 - INFO - trade_current_direction: buy
+2023-11-18 22:19:11,982 - INFO - max_buy_direction_price: 1.67548
+2023-11-18 22:19:11,982 - INFO - max_sell_direction_price: 1.6754
+2023-11-18 22:19:11,982 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-18 22:19:11,982 - INFO - Keep holding...
+2023-11-18 22:49:11,991 - INFO - trade_current_direction: buy
+2023-11-18 22:49:11,991 - INFO - max_buy_direction_price: 1.67548
+2023-11-18 22:49:11,991 - INFO - max_sell_direction_price: 1.6754
+2023-11-18 22:49:11,991 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-18 22:49:11,991 - INFO - Keep holding...
+2023-11-18 23:19:12,008 - INFO - trade_current_direction: buy
+2023-11-18 23:19:12,008 - INFO - max_buy_direction_price: 1.67548
+2023-11-18 23:19:12,008 - INFO - max_sell_direction_price: 1.6754
+2023-11-18 23:19:12,008 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-18 23:19:12,008 - INFO - Keep holding...
+2023-11-18 23:49:12,020 - INFO - trade_current_direction: buy
+2023-11-18 23:49:12,020 - INFO - max_buy_direction_price: 1.67548
+2023-11-18 23:49:12,020 - INFO - max_sell_direction_price: 1.6754
+2023-11-18 23:49:12,020 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-18 23:49:12,020 - INFO - Keep holding...
+2023-11-19 00:19:12,041 - INFO - trade_current_direction: buy
+2023-11-19 00:19:12,041 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 00:19:12,041 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 00:19:12,041 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 00:19:12,041 - INFO - Keep holding...
+2023-11-19 00:49:12,060 - INFO - trade_current_direction: buy
+2023-11-19 00:49:12,060 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 00:49:12,060 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 00:49:12,060 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 00:49:12,060 - INFO - Keep holding...
+2023-11-19 01:19:12,079 - INFO - trade_current_direction: buy
+2023-11-19 01:19:12,079 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 01:19:12,079 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 01:19:12,079 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 01:19:12,079 - INFO - Keep holding...
+2023-11-19 01:49:12,090 - INFO - trade_current_direction: buy
+2023-11-19 01:49:12,090 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 01:49:12,090 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 01:49:12,090 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 01:49:12,090 - INFO - Keep holding...
+2023-11-19 02:19:12,103 - INFO - trade_current_direction: buy
+2023-11-19 02:19:12,103 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 02:19:12,103 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 02:19:12,103 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 02:19:12,103 - INFO - Keep holding...
+2023-11-19 02:49:12,111 - INFO - trade_current_direction: buy
+2023-11-19 02:49:12,111 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 02:49:12,111 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 02:49:12,111 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 02:49:12,111 - INFO - Keep holding...
+2023-11-19 03:19:12,131 - INFO - trade_current_direction: buy
+2023-11-19 03:19:12,131 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 03:19:12,131 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 03:19:12,131 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 03:19:12,131 - INFO - Keep holding...
+2023-11-19 03:49:12,143 - INFO - trade_current_direction: buy
+2023-11-19 03:49:12,143 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 03:49:12,143 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 03:49:12,143 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 03:49:12,143 - INFO - Keep holding...
+2023-11-19 04:19:12,155 - INFO - trade_current_direction: buy
+2023-11-19 04:19:12,155 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 04:19:12,155 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 04:19:12,155 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 04:19:12,155 - INFO - Keep holding...
+2023-11-19 04:49:12,174 - INFO - trade_current_direction: buy
+2023-11-19 04:49:12,174 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 04:49:12,174 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 04:49:12,174 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 04:49:12,174 - INFO - Keep holding...
+2023-11-19 05:19:12,200 - INFO - trade_current_direction: buy
+2023-11-19 05:19:12,200 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 05:19:12,200 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 05:19:12,200 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 05:19:12,200 - INFO - Keep holding...
+2023-11-19 05:49:12,216 - INFO - trade_current_direction: buy
+2023-11-19 05:49:12,216 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 05:49:12,216 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 05:49:12,216 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 05:49:12,216 - INFO - Keep holding...
+2023-11-19 06:19:12,225 - INFO - trade_current_direction: buy
+2023-11-19 06:19:12,225 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 06:19:12,225 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 06:19:12,225 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 06:19:12,225 - INFO - Keep holding...
+2023-11-19 06:49:12,240 - INFO - trade_current_direction: buy
+2023-11-19 06:49:12,240 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 06:49:12,240 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 06:49:12,240 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 06:49:12,240 - INFO - Keep holding...
+2023-11-19 07:19:12,254 - INFO - trade_current_direction: buy
+2023-11-19 07:19:12,254 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 07:19:12,254 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 07:19:12,254 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 07:19:12,254 - INFO - Keep holding...
+2023-11-19 07:49:12,262 - INFO - trade_current_direction: buy
+2023-11-19 07:49:12,262 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 07:49:12,262 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 07:49:12,262 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 07:49:12,262 - INFO - Keep holding...
+2023-11-19 08:19:12,275 - INFO - trade_current_direction: buy
+2023-11-19 08:19:12,275 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 08:19:12,275 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 08:19:12,275 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 08:19:12,275 - INFO - Keep holding...
+2023-11-19 08:49:12,282 - INFO - trade_current_direction: buy
+2023-11-19 08:49:12,282 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 08:49:12,282 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 08:49:12,282 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 08:49:12,282 - INFO - Keep holding...
+2023-11-19 09:19:12,298 - INFO - trade_current_direction: buy
+2023-11-19 09:19:12,298 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 09:19:12,298 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 09:19:12,298 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 09:19:12,298 - INFO - Keep holding...
+2023-11-19 09:49:12,317 - INFO - trade_current_direction: buy
+2023-11-19 09:49:12,317 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 09:49:12,317 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 09:49:12,317 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 09:49:12,317 - INFO - Keep holding...
+2023-11-19 10:19:12,332 - INFO - trade_current_direction: buy
+2023-11-19 10:19:12,332 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 10:19:12,332 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 10:19:12,332 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 10:19:12,332 - INFO - Keep holding...
+2023-11-19 10:49:12,341 - INFO - trade_current_direction: buy
+2023-11-19 10:49:12,341 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 10:49:12,341 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 10:49:12,341 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 10:49:12,341 - INFO - Keep holding...
+2023-11-19 11:19:12,352 - INFO - trade_current_direction: buy
+2023-11-19 11:19:12,352 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 11:19:12,352 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 11:19:12,352 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 11:19:12,352 - INFO - Keep holding...
+2023-11-19 11:49:12,393 - INFO - trade_current_direction: buy
+2023-11-19 11:49:12,393 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 11:49:12,393 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 11:49:12,393 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 11:49:12,393 - INFO - Keep holding...
+2023-11-19 12:19:12,416 - INFO - trade_current_direction: buy
+2023-11-19 12:19:12,416 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 12:19:12,416 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 12:19:12,416 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 12:19:12,416 - INFO - Keep holding...
+2023-11-19 12:49:12,432 - INFO - trade_current_direction: buy
+2023-11-19 12:49:12,432 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 12:49:12,432 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 12:49:12,432 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 12:49:12,432 - INFO - Keep holding...
+2023-11-19 13:19:12,438 - INFO - trade_current_direction: buy
+2023-11-19 13:19:12,438 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 13:19:12,438 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 13:19:12,438 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 13:19:12,438 - INFO - Keep holding...
+2023-11-19 13:49:12,451 - INFO - trade_current_direction: buy
+2023-11-19 13:49:12,451 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 13:49:12,451 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 13:49:12,451 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 13:49:12,451 - INFO - Keep holding...
+2023-11-19 14:19:12,460 - INFO - trade_current_direction: buy
+2023-11-19 14:19:12,460 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 14:19:12,460 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 14:19:12,460 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 14:19:12,460 - INFO - Keep holding...
+2023-11-19 14:49:12,478 - INFO - trade_current_direction: buy
+2023-11-19 14:49:12,478 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 14:49:12,478 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 14:49:12,478 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 14:49:12,478 - INFO - Keep holding...
+2023-11-19 15:19:12,495 - INFO - trade_current_direction: buy
+2023-11-19 15:19:12,495 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 15:19:12,495 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 15:19:12,495 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 15:19:12,495 - INFO - Keep holding...
+2023-11-19 15:49:12,512 - INFO - trade_current_direction: buy
+2023-11-19 15:49:12,512 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 15:49:12,512 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 15:49:12,512 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 15:49:12,512 - INFO - Keep holding...
+2023-11-19 16:19:12,530 - INFO - trade_current_direction: buy
+2023-11-19 16:19:12,530 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 16:19:12,530 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 16:19:12,530 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 16:19:12,530 - INFO - Keep holding...
+2023-11-19 16:49:12,549 - INFO - trade_current_direction: buy
+2023-11-19 16:49:12,549 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 16:49:12,549 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 16:49:12,549 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 16:49:12,549 - INFO - Keep holding...
+2023-11-19 17:19:12,558 - INFO - trade_current_direction: buy
+2023-11-19 17:19:12,558 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 17:19:12,558 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 17:19:12,558 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 17:19:12,558 - INFO - Keep holding...
+2023-11-19 17:49:12,567 - INFO - trade_current_direction: buy
+2023-11-19 17:49:12,567 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 17:49:12,567 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 17:49:12,567 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 17:49:12,567 - INFO - Keep holding...
+2023-11-19 18:19:12,587 - INFO - trade_current_direction: buy
+2023-11-19 18:19:12,587 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 18:19:12,587 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 18:19:12,587 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 18:19:12,587 - INFO - Keep holding...
+2023-11-19 18:49:12,604 - INFO - trade_current_direction: buy
+2023-11-19 18:49:12,604 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 18:49:12,604 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 18:49:12,604 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 18:49:12,604 - INFO - Keep holding...
+2023-11-19 19:19:12,623 - INFO - trade_current_direction: buy
+2023-11-19 19:19:12,623 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 19:19:12,623 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 19:19:12,623 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 19:19:12,623 - INFO - Keep holding...
+2023-11-19 19:49:12,635 - INFO - trade_current_direction: buy
+2023-11-19 19:49:12,635 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 19:49:12,635 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 19:49:12,635 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 19:49:12,635 - INFO - Keep holding...
+2023-11-19 20:19:12,650 - INFO - trade_current_direction: buy
+2023-11-19 20:19:12,650 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 20:19:12,650 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 20:19:12,650 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 20:19:12,650 - INFO - Keep holding...
+2023-11-19 20:49:12,667 - INFO - trade_current_direction: buy
+2023-11-19 20:49:12,667 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 20:49:12,667 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 20:49:12,667 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 20:49:12,667 - INFO - Keep holding...
+2023-11-19 21:19:12,671 - INFO - trade_current_direction: buy
+2023-11-19 21:19:12,671 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 21:19:12,671 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 21:19:12,671 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 21:19:12,671 - INFO - Keep holding...
+2023-11-19 21:49:12,685 - INFO - trade_current_direction: buy
+2023-11-19 21:49:12,685 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 21:49:12,685 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 21:49:12,685 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 21:49:12,685 - INFO - Keep holding...
+2023-11-19 22:19:12,705 - INFO - trade_current_direction: buy
+2023-11-19 22:19:12,705 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 22:19:12,705 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 22:19:12,705 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 22:19:12,705 - INFO - Keep holding...
+2023-11-19 22:49:12,715 - INFO - trade_current_direction: buy
+2023-11-19 22:49:12,715 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 22:49:12,715 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 22:49:12,715 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 22:49:12,715 - INFO - Keep holding...
+2023-11-19 23:19:12,733 - INFO - trade_current_direction: buy
+2023-11-19 23:19:12,733 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 23:19:12,733 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 23:19:12,733 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 23:19:12,733 - INFO - Keep holding...
+2023-11-19 23:49:12,748 - INFO - trade_current_direction: buy
+2023-11-19 23:49:12,748 - INFO - max_buy_direction_price: 1.67548
+2023-11-19 23:49:12,748 - INFO - max_sell_direction_price: 1.6754
+2023-11-19 23:49:12,748 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-19 23:49:12,748 - INFO - Keep holding...
+2023-11-20 00:19:12,765 - INFO - trade_current_direction: buy
+2023-11-20 00:19:12,765 - INFO - max_buy_direction_price: 1.67548
+2023-11-20 00:19:12,765 - INFO - max_sell_direction_price: 1.6754
+2023-11-20 00:19:12,765 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-20 00:19:12,765 - INFO - Keep holding...
+2023-11-20 00:49:12,783 - INFO - trade_current_direction: buy
+2023-11-20 00:49:12,783 - INFO - max_buy_direction_price: 1.67548
+2023-11-20 00:49:12,799 - INFO - max_sell_direction_price: 1.6754
+2023-11-20 00:49:12,799 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-20 00:49:12,799 - INFO - Keep holding...
+2023-11-20 01:19:12,809 - INFO - trade_current_direction: buy
+2023-11-20 01:19:12,809 - INFO - max_buy_direction_price: 1.67548
+2023-11-20 01:19:12,809 - INFO - max_sell_direction_price: 1.6754
+2023-11-20 01:19:12,809 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-20 01:19:12,809 - INFO - Keep holding...
+2023-11-20 01:49:12,826 - INFO - trade_current_direction: buy
+2023-11-20 01:49:12,826 - INFO - max_buy_direction_price: 1.67548
+2023-11-20 01:49:12,826 - INFO - max_sell_direction_price: 1.6754
+2023-11-20 01:49:12,826 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-20 01:49:12,826 - INFO - Keep holding...
+2023-11-20 02:19:12,841 - INFO - trade_current_direction: buy
+2023-11-20 02:19:12,841 - INFO - max_buy_direction_price: 1.67548
+2023-11-20 02:19:12,841 - INFO - max_sell_direction_price: 1.6754
+2023-11-20 02:19:12,841 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-20 02:19:12,841 - INFO - Keep holding...
+2023-11-20 02:49:12,859 - INFO - trade_current_direction: buy
+2023-11-20 02:49:12,859 - INFO - max_buy_direction_price: 1.67548
+2023-11-20 02:49:12,859 - INFO - max_sell_direction_price: 1.6754
+2023-11-20 02:49:12,859 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-20 02:49:12,859 - INFO - Keep holding...
+2023-11-20 03:19:12,878 - INFO - trade_current_direction: buy
+2023-11-20 03:19:12,878 - INFO - max_buy_direction_price: 1.67548
+2023-11-20 03:19:12,878 - INFO - max_sell_direction_price: 1.6754
+2023-11-20 03:19:12,878 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-20 03:19:12,878 - INFO - Keep holding...
+2023-11-20 03:49:12,897 - INFO - trade_current_direction: buy
+2023-11-20 03:49:12,897 - INFO - max_buy_direction_price: 1.67548
+2023-11-20 03:49:12,897 - INFO - max_sell_direction_price: 1.6754
+2023-11-20 03:49:12,897 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-20 03:49:12,897 - INFO - Keep holding...
+2023-11-20 04:19:12,914 - INFO - trade_current_direction: buy
+2023-11-20 04:19:12,914 - INFO - max_buy_direction_price: 1.67548
+2023-11-20 04:19:12,914 - INFO - max_sell_direction_price: 1.6754
+2023-11-20 04:19:12,914 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-20 04:19:12,914 - INFO - Keep holding...
+2023-11-20 04:49:12,933 - INFO - trade_current_direction: buy
+2023-11-20 04:49:12,933 - INFO - max_buy_direction_price: 1.67548
+2023-11-20 04:49:12,933 - INFO - max_sell_direction_price: 1.6754
+2023-11-20 04:49:12,933 - INFO - Current current_market_price: 1.6752799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-20 04:49:12,933 - INFO - Keep holding...
+2023-11-20 05:19:12,952 - INFO - trade_current_direction: buy
+2023-11-20 05:19:12,952 - INFO - max_buy_direction_price: 1.67548
+2023-11-20 05:19:12,952 - INFO - max_sell_direction_price: 1.6754
+2023-11-20 05:19:12,952 - INFO - Current market buy price: 1.67601 > max buy price 1.67548
+2023-11-20 05:19:12,968 - INFO - Current current_market_price: 1.67601 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-20 05:19:12,968 - INFO - Keep holding...
+2023-11-20 05:49:12,998 - INFO - trade_current_direction: buy
+2023-11-20 05:49:12,998 - INFO - max_buy_direction_price: 1.67601
+2023-11-20 05:49:12,998 - INFO - max_sell_direction_price: 1.6754
+2023-11-20 05:49:12,998 - INFO - Current current_market_price: 1.6754799999999999 | next buy price: 1.67898 | next sell price: 1.6719
+2023-11-20 05:49:12,998 - INFO - Keep holding...
+2023-11-20 06:19:13,023 - INFO - Market reverse 30% from buy direction to sell
+2023-11-20 06:19:14,883 - INFO - Close all of the orders: SUCCESSFULLY
+2023-11-20 06:19:14,883 - INFO - =====================Bot existing ...=====================
+2023-11-20 08:53:12,784 - INFO - =====================PROGRAM START====================
+2023-11-20 08:53:12,784 - INFO - File EURAUD_trade_history_df.csv already exists. Skipping creation.
+2023-11-20 08:53:12,800 - INFO - last_trade_buy_status : close
+2023-11-20 08:53:12,815 - INFO - last_trade_sell_status : close
+2023-11-20 08:53:12,815 - INFO - False
+2023-11-20 08:53:12,815 - INFO - Make first trade
+2023-11-20 08:53:12,815 - INFO - Account Balance: 6121.87
+2023-11-20 08:53:12,815 - INFO - Account Equity: 6115.68
+2023-11-20 08:53:12,815 - INFO - Account Margin: 2000.0
+2023-11-20 08:53:12,815 - INFO - Account Free Margin: 4115.68
+2023-11-20 08:53:12,815 - INFO - fib number :1
+2023-11-20 08:53:12,815 - INFO - Symbol Margin Required for 1 lot: 0.0
+2023-11-20 08:53:12,815 - INFO - File EURAUD_trade_history_df.csv already exists. Skipping creation.
+2023-11-20 08:53:13,422 - INFO - order_result: OrderSendResult(retcode=10009, deal=384621348, order=527166103, volume=0.03, price=1.67283, bid=1.6727400000000001, ask=1.67283, comment='Request executed', request_id=4235269587, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.03, price=1.67283, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=0, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-20 08:53:14,024 - INFO - order_result: OrderSendResult(retcode=10009, deal=384621350, order=527166105, volume=0.03, price=1.6727400000000001, bid=1.6727400000000001, ask=1.6728399999999999, comment='Request executed', request_id=4235269588, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.03, price=1.6727400000000001, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=1, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-20 08:53:14,078 - INFO - Data frame has been updated. File name: EURAUD_trade_history_df.csv
+2023-11-20 08:53:15,310 - INFO - trade_current_direction: nan
+2023-11-20 08:53:15,310 - INFO - max_buy_direction_price: 1.67283
+2023-11-20 08:53:15,310 - INFO - max_sell_direction_price: 1.67274
+2023-11-20 08:53:15,310 - INFO - Current current_market_price: 1.67283 | next buy price: 1.67633 | next sell price: 1.66924
+2023-11-20 08:53:15,310 - INFO - Keep holding...
+2023-11-20 08:54:20,423 - INFO - =====================PROGRAM START====================
+2023-11-20 08:54:20,423 - INFO - File EURAUD_trade_history_df.csv already exists. Skipping creation.
+2023-11-20 08:54:20,439 - INFO - last_trade_buy_status : open
+2023-11-20 08:54:20,439 - INFO - last_trade_sell_status : open
+2023-11-20 08:54:20,439 - INFO - True
+2023-11-20 08:54:20,439 - INFO - Already has opened order
+2023-11-20 08:54:20,479 - INFO - trade_current_direction: nan
+2023-11-20 08:54:20,479 - INFO - max_buy_direction_price: 1.67283
+2023-11-20 08:54:20,479 - INFO - max_sell_direction_price: 1.67274
+2023-11-20 08:54:20,479 - INFO - Current current_market_price: 1.67289 | next buy price: 1.67633 | next sell price: 1.66924
+2023-11-20 08:54:20,479 - INFO - Keep holding...
+2023-11-20 08:56:15,034 - INFO - =====================PROGRAM START====================
+2023-11-20 08:56:15,034 - INFO - File EURAUD_trade_history_df.csv already exists. Skipping creation.
+2023-11-20 08:56:15,049 - INFO - last_trade_buy_status : open
+2023-11-20 08:56:15,049 - INFO - last_trade_sell_status : open
+2023-11-20 08:56:15,049 - INFO - True
+2023-11-20 08:56:15,049 - INFO - Already has opened order
+2023-11-20 08:56:15,065 - INFO - trade_current_direction: nan
+2023-11-20 08:56:15,065 - INFO - max_buy_direction_price: 1.67283
+2023-11-20 08:56:15,065 - INFO - max_sell_direction_price: 1.67274
+2023-11-20 08:56:15,065 - INFO - Current current_market_price: 1.67302 | next buy price: 1.67633 | next sell price: 1.66924
+2023-11-20 08:56:15,065 - INFO - Keep holding...
+2023-11-20 09:00:59,874 - INFO - =====================PROGRAM START====================
+2023-11-20 09:00:59,874 - INFO - File EURAUD_trade_history_df.csv already exists. Skipping creation.
+2023-11-20 09:00:59,890 - INFO - last_trade_buy_status : open
+2023-11-20 09:00:59,890 - INFO - last_trade_sell_status : open
+2023-11-20 09:00:59,890 - INFO - True
+2023-11-20 09:00:59,890 - INFO - Already has opened order
+2023-11-20 09:00:59,921 - INFO - trade_current_direction: nan
+2023-11-20 09:00:59,921 - INFO - max_buy_direction_price: 1.67283
+2023-11-20 09:00:59,921 - INFO - max_sell_direction_price: 1.67274
+2023-11-20 09:00:59,921 - INFO - Current current_market_price: 1.67307 | next buy price: 1.67633 | next sell price: 1.66924
+2023-11-20 09:00:59,921 - INFO - Keep holding...
+2023-11-20 09:07:20,055 - INFO - =====================PROGRAM START====================
+2023-11-20 09:07:20,056 - INFO - File EURAUD_trade_history_df.csv already exists. Skipping creation.
+2023-11-20 09:07:20,069 - INFO - last_trade_buy_status : open
+2023-11-20 09:07:20,070 - INFO - last_trade_sell_status : open
+2023-11-20 09:07:20,070 - INFO - True
+2023-11-20 09:07:20,070 - INFO - Already has opened order
+2023-11-20 09:07:20,080 - INFO - trade_current_direction: nan
+2023-11-20 09:07:20,080 - INFO - max_buy_direction_price: 1.67283
+2023-11-20 09:07:20,080 - INFO - max_sell_direction_price: 1.67274
+2023-11-20 09:07:20,080 - INFO - Current current_market_price: 1.6735600000000002 | next buy price: 1.67633 | next sell price: 1.66924
+2023-11-20 09:07:20,080 - INFO - Keep holding...
+2023-11-20 09:07:33,907 - INFO - =====================PROGRAM START====================
+2023-11-20 09:07:33,908 - INFO - File EURAUD_trade_history_df.csv already exists. Skipping creation.
+2023-11-20 09:07:33,918 - INFO - last_trade_buy_status : open
+2023-11-20 09:07:33,918 - INFO - last_trade_sell_status : open
+2023-11-20 09:07:33,918 - INFO - True
+2023-11-20 09:07:33,918 - INFO - Already has opened order
+2023-11-20 09:07:33,934 - INFO - trade_current_direction: nan
+2023-11-20 09:07:33,934 - INFO - max_buy_direction_price: 1.67283
+2023-11-20 09:07:33,934 - INFO - max_sell_direction_price: 1.67274
+2023-11-20 09:07:33,934 - INFO - Current current_market_price: 1.67353 | next buy price: 1.67633 | next sell price: 1.66924
+2023-11-20 09:07:33,934 - INFO - Keep holding...
+2023-11-20 09:08:54,949 - INFO - =====================PROGRAM START====================
+2023-11-20 09:08:54,949 - INFO - File EURAUD_trade_history_df.csv already exists. Skipping creation.
+2023-11-20 09:08:54,965 - INFO - last_trade_buy_status : open
+2023-11-20 09:08:54,965 - INFO - last_trade_sell_status : open
+2023-11-20 09:08:54,965 - INFO - True
+2023-11-20 09:08:54,965 - INFO - Already has opened order
+2023-11-20 09:08:54,965 - INFO - trade_current_direction: nan
+2023-11-20 09:08:54,965 - INFO - max_buy_direction_price: 1.67283
+2023-11-20 09:08:54,965 - INFO - max_sell_direction_price: 1.67274
+2023-11-20 09:08:54,965 - INFO - Current current_market_price: 1.6735 | next buy price: 1.67633 | next sell price: 1.66924
+2023-11-20 09:08:54,965 - INFO - Keep holding...
+2023-11-20 09:09:39,091 - INFO - =====================PROGRAM START====================
+2023-11-20 09:09:39,092 - INFO - File EURAUD_trade_history_df.csv already exists. Skipping creation.
+2023-11-20 09:09:39,094 - INFO - last_trade_buy_status : open
+2023-11-20 09:09:39,094 - INFO - last_trade_sell_status : open
+2023-11-20 09:09:39,094 - INFO - True
+2023-11-20 09:09:39,094 - INFO - Already has opened order
+2023-11-20 09:09:39,109 - INFO - trade_current_direction: nan
+2023-11-20 09:09:39,109 - INFO - max_buy_direction_price: 1.67283
+2023-11-20 09:09:39,109 - INFO - max_sell_direction_price: 1.67274
+2023-11-20 09:09:39,109 - INFO - Current current_market_price: 1.67323 | next buy price: 1.67633 | next sell price: 1.66924
+2023-11-20 09:09:39,109 - INFO - Keep holding...
+2023-11-20 09:10:51,501 - INFO - =====================PROGRAM START====================
+2023-11-20 09:10:51,502 - INFO - File EURAUD_trade_history_df.csv already exists. Skipping creation.
+2023-11-20 09:10:51,516 - INFO - last_trade_buy_status : open
+2023-11-20 09:10:51,517 - INFO - last_trade_sell_status : open
+2023-11-20 09:10:51,519 - INFO - True
+2023-11-20 09:10:51,519 - INFO - Already has opened order
+2023-11-20 09:10:51,532 - INFO - trade_current_direction: nan
+2023-11-20 09:10:51,533 - INFO - max_buy_direction_price: 1.67283
+2023-11-20 09:10:51,533 - INFO - max_sell_direction_price: 1.67274
+2023-11-20 09:10:51,534 - INFO - Current current_market_price: 1.67344 | next buy price: 1.67633 | next sell price: 1.66924
+2023-11-20 09:10:51,535 - INFO - Keep holding...
+2023-11-20 09:13:17,272 - INFO - =====================PROGRAM START====================
+2023-11-20 09:13:17,272 - INFO - File EURAUD_trade_history_df.csv already exists. Skipping creation.
+2023-11-20 09:13:17,287 - INFO - last_trade_buy_status : open
+2023-11-20 09:13:17,287 - INFO - last_trade_sell_status : open
+2023-11-20 09:13:17,287 - INFO - True
+2023-11-20 09:13:17,287 - INFO - Already has opened order
+2023-11-20 09:13:17,319 - INFO - trade_current_direction: nan
+2023-11-20 09:13:17,319 - INFO - max_buy_direction_price: 1.67283
+2023-11-20 09:13:17,319 - INFO - max_sell_direction_price: 1.67274
+2023-11-20 09:13:17,319 - INFO - Current current_market_price: 1.67302 | next buy price: 1.67633 | next sell price: 1.66924
+2023-11-20 09:13:17,319 - INFO - Keep holding...
+2023-11-20 09:43:17,333 - INFO - trade_current_direction: nan
+2023-11-20 09:43:17,333 - INFO - max_buy_direction_price: 1.67283
+2023-11-20 09:43:17,333 - INFO - max_sell_direction_price: 1.67274
+2023-11-20 09:43:17,333 - INFO - Current current_market_price: 1.67008 | next buy price: 1.67633 | next sell price: 1.66924
+2023-11-20 09:43:17,333 - INFO - Keep holding...
+2023-11-20 10:13:17,350 - INFO - trade_current_direction: nan
+2023-11-20 10:13:17,350 - INFO - max_buy_direction_price: 1.67283
+2023-11-20 10:13:17,350 - INFO - max_sell_direction_price: 1.67274
+2023-11-20 10:13:17,350 - INFO - Current current_market_price: 1.66974 | next buy price: 1.67633 | next sell price: 1.66924
+2023-11-20 10:13:17,350 - INFO - Keep holding...
+2023-11-20 10:43:17,362 - INFO - current_market_price <= next_sell_at
+2023-11-20 10:43:17,362 - INFO - 1
+                527166105
+                EURAUD
+                0.03
+                0
+                1.67274
+                0
+                1
+              
+2023-11-20 10:43:18,065 - INFO - Close last sell order: COMPLETED
+2023-11-20 10:43:18,081 - INFO - Account Balance: 6129.93
+2023-11-20 10:43:18,081 - INFO - Account Equity: 6110.84
+2023-11-20 10:43:18,081 - INFO - Account Margin: 7449.96
+2023-11-20 10:43:18,081 - INFO - Account Free Margin: -1339.12
+2023-11-20 10:43:19,238 - INFO - order_result: OrderSendResult(retcode=10009, deal=384668500, order=527221425, volume=0.03, price=1.6688, bid=1.6688, ask=1.66887, comment='Request executed', request_id=4235269609, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.03, price=1.6688, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=1, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-20 21:56:46,947 - INFO - =====================PROGRAM START====================
+2023-11-20 21:56:46,948 - INFO - File EURAUD_trade_history_df.csv already exists. Skipping creation.
+2023-11-20 21:56:46,971 - INFO - last_trade_buy_status : open
+2023-11-20 21:56:46,971 - INFO - last_trade_sell_status : close
+2023-11-20 21:56:46,973 - INFO - True
+2023-11-20 21:56:46,973 - INFO - Already has opened order
+2023-11-20 21:56:46,984 - INFO - trade_current_direction: nan
+2023-11-20 21:56:46,985 - INFO - max_buy_direction_price: 1.67283
+2023-11-20 21:56:46,986 - INFO - max_sell_direction_price: 1.67274
+2023-11-20 21:56:46,986 - INFO - Current current_market_price: 1.67212 | next buy price: 1.67633 | next sell price: 1.66924
+2023-11-20 21:56:46,986 - INFO - Keep holding...
+2023-11-20 22:26:46,987 - INFO - trade_current_direction: nan
+2023-11-20 22:26:46,987 - INFO - max_buy_direction_price: 1.67283
+2023-11-20 22:26:46,987 - INFO - max_sell_direction_price: 1.67274
+2023-11-20 22:26:46,987 - INFO - Current current_market_price: 1.6710500000000001 | next buy price: 1.67633 | next sell price: 1.66924
+2023-11-20 22:26:46,987 - INFO - Keep holding...
+2023-11-20 22:56:46,996 - INFO - trade_current_direction: nan
+2023-11-20 22:56:46,996 - INFO - max_buy_direction_price: 1.67283
+2023-11-20 22:56:46,996 - INFO - max_sell_direction_price: 1.67274
+2023-11-20 22:56:46,996 - INFO - Current current_market_price: 1.6709399999999999 | next buy price: 1.67633 | next sell price: 1.66924
+2023-11-20 22:56:46,996 - INFO - Keep holding...
+2023-11-20 23:26:47,006 - INFO - trade_current_direction: nan
+2023-11-20 23:26:47,006 - INFO - max_buy_direction_price: 1.67283
+2023-11-20 23:26:47,006 - INFO - max_sell_direction_price: 1.67274
+2023-11-20 23:26:47,006 - INFO - Current current_market_price: 1.6709 | next buy price: 1.67633 | next sell price: 1.66924
+2023-11-20 23:26:47,006 - INFO - Keep holding...
+2023-11-20 23:56:47,017 - INFO - current_market_price <= next_sell_at
+2023-11-20 23:56:47,017 - INFO - 1
+                527166105
+                EURAUD
+                0.03
+                0
+                1.67274
+                0
+                1
+              
+2023-11-20 23:56:47,034 - INFO - Close last sell order: COMPLETED
+2023-11-20 23:56:47,037 - INFO - Account Balance: 6134.85
+2023-11-20 23:56:47,037 - INFO - Account Equity: 6109.6
+2023-11-20 23:56:47,037 - INFO - Account Margin: 2000.0
+2023-11-20 23:56:47,038 - INFO - Account Free Margin: 4109.6
+2023-11-20 23:56:47,617 - INFO - order_result: OrderSendResult(retcode=10009, deal=385160850, order=527796366, volume=0.03, price=1.6692200000000001, bid=1.6691799999999999, ask=1.6692200000000001, comment='Request executed', request_id=4235269612, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.03, price=1.66921, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=0, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-20 23:56:48,133 - INFO - order_result: OrderSendResult(retcode=10009, deal=385160855, order=527796372, volume=0.03, price=1.66921, bid=1.66921, ask=1.66926, comment='Request executed', request_id=4235269613, retcode_external=0, request=TradeRequest(action=1, magic=100, order=0, symbol='EURAUD', volume=0.03, price=1.6691799999999999, stoplimit=0.0, sl=0.0, tp=0.0, deviation=20, type=1, type_filling=1, type_time=0, expiration=0, comment='python market order', position=0, position_by=0))
+2023-11-20 23:56:48,149 - INFO - Data frame has been updated. File name: EURAUD_trade_history_df.csv
+2023-11-20 23:56:48,149 - INFO - Make next buy and sell orders: COMPLETED
+2023-11-21 00:26:48,171 - INFO - trade_current_direction: sell
+2023-11-21 00:26:48,171 - INFO - max_buy_direction_price: 1.66922
+2023-11-21 00:26:48,171 - INFO - max_sell_direction_price: 1.66921
+2023-11-21 00:26:48,171 - INFO - Current market buy price: 1.66906 < max sell price 1.66921
+2023-11-21 00:26:48,187 - INFO - Current current_market_price: 1.66906 | next buy price: 1.6727200000000002 | next sell price: 1.66571
+2023-11-21 00:26:48,187 - INFO - Keep holding...
+2023-11-21 00:56:48,193 - INFO - Market reverse 30% from sell direction to buy
+2023-11-21 00:56:50,334 - INFO - Close all of the orders: SUCCESSFULLY
+2023-11-21 00:56:50,334 - INFO - =====================Bot existing ...=====================
